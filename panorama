@@ -1,0 +1,1172 @@
+<html>
+   <head>
+      <script>window.sessionId = 'rck.' + Math.random().toString(36).substr(2, 9) + '.' + Date.now();</script>
+      <style type="text/css">
+         html {
+         box-sizing: border-box;
+         -ms-overflow-style: scrollbar;
+         }
+         body{
+         margin:0;
+         padding:0
+         }
+         *,
+         *::before,
+         *::after {
+         box-sizing: inherit;
+         }
+         .container {
+         width: 100%;
+         padding-right: 15px;
+         padding-left: 15px;
+         margin-right: auto;
+         margin-left: auto;
+         }
+         @media (min-width: 576px) {
+         .container {
+         max-width: 540px;
+         }
+         }
+         @media (min-width: 768px) {
+         .container {
+         max-width: 720px;
+         }
+         }
+         @media (min-width: 992px) {
+         .container {
+         max-width: 960px;
+         }
+         }
+         @media (min-width: 1200px) {
+         .container {
+         max-width: 1140px;
+         }
+         }
+         .container-fluid {
+         width: 100%;
+         padding-right: 15px;
+         padding-left: 15px;
+         margin-right: auto;
+         margin-left: auto;
+         }
+         .row {
+         display: -ms-flexbox;
+         display: flex;
+         -ms-flex-wrap: wrap;
+         flex-wrap: wrap;
+         margin-right: -15px;
+         margin-left: -15px;
+         }
+         .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+         .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+         .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+         .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+         .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+         .col-xl-auto {
+         position: relative;
+         width: 100%;
+         padding-right: 15px;
+         padding-left: 15px;
+         }
+         .col {
+         -ms-flex-preferred-size: 0;
+         flex-basis: 0;
+         -ms-flex-positive: 1;
+         flex-grow: 1;
+         max-width: 100%;
+         }
+         .col-auto {
+         -ms-flex: 0 0 auto;
+         flex: 0 0 auto;
+         width: auto;
+         max-width: 100%;
+         }
+         .col-1 {
+         -ms-flex: 0 0 8.333333%;
+         flex: 0 0 8.333333%;
+         max-width: 8.333333%;
+         }
+         .col-2 {
+         -ms-flex: 0 0 16.666667%;
+         flex: 0 0 16.666667%;
+         max-width: 16.666667%;
+         }
+         .col-3 {
+         -ms-flex: 0 0 25%;
+         flex: 0 0 25%;
+         max-width: 25%;
+         }
+         .col-4 {
+         -ms-flex: 0 0 33.333333%;
+         flex: 0 0 33.333333%;
+         max-width: 33.333333%;
+         }
+         .col-5 {
+         -ms-flex: 0 0 41.666667%;
+         flex: 0 0 41.666667%;
+         max-width: 41.666667%;
+         }
+         .col-6 {
+         -ms-flex: 0 0 50%;
+         flex: 0 0 50%;
+         max-width: 50%;
+         }
+         .col-7 {
+         -ms-flex: 0 0 58.333333%;
+         flex: 0 0 58.333333%;
+         max-width: 58.333333%;
+         }
+         .col-8 {
+         -ms-flex: 0 0 66.666667%;
+         flex: 0 0 66.666667%;
+         max-width: 66.666667%;
+         }
+         .col-9 {
+         -ms-flex: 0 0 75%;
+         flex: 0 0 75%;
+         max-width: 75%;
+         }
+         .col-10 {
+         -ms-flex: 0 0 83.333333%;
+         flex: 0 0 83.333333%;
+         max-width: 83.333333%;
+         }
+         .col-11 {
+         -ms-flex: 0 0 91.666667%;
+         flex: 0 0 91.666667%;
+         max-width: 91.666667%;
+         }
+         .col-12 {
+         -ms-flex: 0 0 100%;
+         flex: 0 0 100%;
+         max-width: 100%;
+         }
+         @media (min-width: 576px) {
+         .col-sm {
+         -ms-flex-preferred-size: 0;
+         flex-basis: 0;
+         -ms-flex-positive: 1;
+         flex-grow: 1;
+         max-width: 100%;
+         }
+         .col-sm-auto {
+         -ms-flex: 0 0 auto;
+         flex: 0 0 auto;
+         width: auto;
+         max-width: 100%;
+         }
+         .col-sm-1 {
+         -ms-flex: 0 0 8.333333%;
+         flex: 0 0 8.333333%;
+         max-width: 8.333333%;
+         }
+         .col-sm-2 {
+         -ms-flex: 0 0 16.666667%;
+         flex: 0 0 16.666667%;
+         max-width: 16.666667%;
+         }
+         .col-sm-3 {
+         -ms-flex: 0 0 25%;
+         flex: 0 0 25%;
+         max-width: 25%;
+         }
+         .col-sm-4 {
+         -ms-flex: 0 0 33.333333%;
+         flex: 0 0 33.333333%;
+         max-width: 33.333333%;
+         }
+         .col-sm-5 {
+         -ms-flex: 0 0 41.666667%;
+         flex: 0 0 41.666667%;
+         max-width: 41.666667%;
+         }
+         .col-sm-6 {
+         -ms-flex: 0 0 50%;
+         flex: 0 0 50%;
+         max-width: 50%;
+         }
+         .col-sm-7 {
+         -ms-flex: 0 0 58.333333%;
+         flex: 0 0 58.333333%;
+         max-width: 58.333333%;
+         }
+         .col-sm-8 {
+         -ms-flex: 0 0 66.666667%;
+         flex: 0 0 66.666667%;
+         max-width: 66.666667%;
+         }
+         .col-sm-9 {
+         -ms-flex: 0 0 75%;
+         flex: 0 0 75%;
+         max-width: 75%;
+         }
+         .col-sm-10 {
+         -ms-flex: 0 0 83.333333%;
+         flex: 0 0 83.333333%;
+         max-width: 83.333333%;
+         }
+         .col-sm-11 {
+         -ms-flex: 0 0 91.666667%;
+         flex: 0 0 91.666667%;
+         max-width: 91.666667%;
+         }
+         .col-sm-12 {
+         -ms-flex: 0 0 100%;
+         flex: 0 0 100%;
+         max-width: 100%;
+         }
+         .order-sm-first {
+         -ms-flex-order: -1;
+         order: -1;
+         }
+         .order-sm-last {
+         -ms-flex-order: 13;
+         order: 13;
+         }
+         .order-sm-0 {
+         -ms-flex-order: 0;
+         order: 0;
+         }
+         .order-sm-1 {
+         -ms-flex-order: 1;
+         order: 1;
+         }
+         .order-sm-2 {
+         -ms-flex-order: 2;
+         order: 2;
+         }
+         .order-sm-3 {
+         -ms-flex-order: 3;
+         order: 3;
+         }
+         .order-sm-4 {
+         -ms-flex-order: 4;
+         order: 4;
+         }
+         .order-sm-5 {
+         -ms-flex-order: 5;
+         order: 5;
+         }
+         .order-sm-6 {
+         -ms-flex-order: 6;
+         order: 6;
+         }
+         .order-sm-7 {
+         -ms-flex-order: 7;
+         order: 7;
+         }
+         .order-sm-8 {
+         -ms-flex-order: 8;
+         order: 8;
+         }
+         .order-sm-9 {
+         -ms-flex-order: 9;
+         order: 9;
+         }
+         .order-sm-10 {
+         -ms-flex-order: 10;
+         order: 10;
+         }
+         .order-sm-11 {
+         -ms-flex-order: 11;
+         order: 11;
+         }
+         .order-sm-12 {
+         -ms-flex-order: 12;
+         order: 12;
+         }
+         .offset-sm-0 {
+         margin-left: 0;
+         }
+         .offset-sm-1 {
+         margin-left: 8.333333%;
+         }
+         .offset-sm-2 {
+         margin-left: 16.666667%;
+         }
+         .offset-sm-3 {
+         margin-left: 25%;
+         }
+         .offset-sm-4 {
+         margin-left: 33.333333%;
+         }
+         .offset-sm-5 {
+         margin-left: 41.666667%;
+         }
+         .offset-sm-6 {
+         margin-left: 50%;
+         }
+         .offset-sm-7 {
+         margin-left: 58.333333%;
+         }
+         .offset-sm-8 {
+         margin-left: 66.666667%;
+         }
+         .offset-sm-9 {
+         margin-left: 75%;
+         }
+         .offset-sm-10 {
+         margin-left: 83.333333%;
+         }
+         .offset-sm-11 {
+         margin-left: 91.666667%;
+         }
+         }
+         @media (min-width: 768px) {
+         .col-md {
+         -ms-flex-preferred-size: 0;
+         flex-basis: 0;
+         -ms-flex-positive: 1;
+         flex-grow: 1;
+         max-width: 100%;
+         }
+         .col-md-auto {
+         -ms-flex: 0 0 auto;
+         flex: 0 0 auto;
+         width: auto;
+         max-width: 100%;
+         }
+         .col-md-1 {
+         -ms-flex: 0 0 8.333333%;
+         flex: 0 0 8.333333%;
+         max-width: 8.333333%;
+         }
+         .col-md-2 {
+         -ms-flex: 0 0 16.666667%;
+         flex: 0 0 16.666667%;
+         max-width: 16.666667%;
+         }
+         .col-md-3 {
+         -ms-flex: 0 0 25%;
+         flex: 0 0 25%;
+         max-width: 25%;
+         }
+         .col-md-4 {
+         -ms-flex: 0 0 33.333333%;
+         flex: 0 0 33.333333%;
+         max-width: 33.333333%;
+         }
+         .col-md-5 {
+         -ms-flex: 0 0 41.666667%;
+         flex: 0 0 41.666667%;
+         max-width: 41.666667%;
+         }
+         .col-md-6 {
+         -ms-flex: 0 0 50%;
+         flex: 0 0 50%;
+         max-width: 50%;
+         }
+         .col-md-7 {
+         -ms-flex: 0 0 58.333333%;
+         flex: 0 0 58.333333%;
+         max-width: 58.333333%;
+         }
+         .col-md-8 {
+         -ms-flex: 0 0 66.666667%;
+         flex: 0 0 66.666667%;
+         max-width: 66.666667%;
+         }
+         .col-md-9 {
+         -ms-flex: 0 0 75%;
+         flex: 0 0 75%;
+         max-width: 75%;
+         }
+         .col-md-10 {
+         -ms-flex: 0 0 83.333333%;
+         flex: 0 0 83.333333%;
+         max-width: 83.333333%;
+         }
+         .col-md-11 {
+         -ms-flex: 0 0 91.666667%;
+         flex: 0 0 91.666667%;
+         max-width: 91.666667%;
+         }
+         .col-md-12 {
+         -ms-flex: 0 0 100%;
+         flex: 0 0 100%;
+         max-width: 100%;
+         }
+         }
+         .form-control {
+         display: block;
+         width: 100%;
+         height: calc(2.25rem + 2px);
+         padding: 0.375rem 0.75rem;
+         font-size: 1rem;
+         font-weight: 400;
+         line-height: 1.5;
+         color: #495057;
+         background-color: #fff;
+         background-clip: padding-box;
+         border: 1px solid #ced4da;
+         border-radius: 0.25rem;
+         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+         }
+         .form-group {
+         margin-bottom: 1rem;
+         }
+         @media screen and (prefers-reduced-motion: reduce) {
+         .form-control {
+         transition: none;
+         }
+         }
+         .form-control::-ms-expand {
+         background-color: transparent;
+         border: 0;
+         }
+         .form-control:focus {
+         color: #495057;
+         background-color: #fff;
+         border-color: #80bdff;
+         outline: 0;
+         box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+         }
+         .form-control::-webkit-input-placeholder {
+         color: #6c757d;
+         opacity: 1;
+         }
+         .form-control::-moz-placeholder {
+         color: #6c757d;
+         opacity: 1;
+         }
+         .form-control:-ms-input-placeholder {
+         color: #6c757d;
+         opacity: 1;
+         }
+         .form-control::-ms-input-placeholder {
+         color: #6c757d;
+         opacity: 1;
+         }
+         .form-control::placeholder {
+         color: #6c757d;
+         opacity: 1;
+         }
+         .form-control:disabled, .form-control[readonly] {
+         background-color: #e9ecef;
+         opacity: 1;
+         }
+         .btn {
+         display: inline-block;
+         margin-bottom: 0;
+         font-weight: normal;
+         text-align: center;
+         vertical-align: middle;
+         -ms-touch-action: manipulation;
+         touch-action: manipulation;
+         cursor: pointer;
+         background-image: none;
+         padding: 6px 12px;
+         font-size: 14px;
+         line-height: 1.42857143;
+         border-radius: 4px;
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         -ms-user-select: none;
+         user-select: none;
+         background-color: transparent;border: 1px solid transparent;
+         }
+         .btn:focus,
+         .btn:active:focus,
+         .btn.active:focus,
+         .btn.focus,
+         .btn:active.focus,
+         .btn.active.focus {
+         outline:0;
+         }
+         .btn-light{
+         color:#212529;
+         background-color:#f8f9fa;
+         border-color:#f8f9fa
+         }
+         .btn-light:hover{
+         color:#212529;
+         background-color:#e2e6ea;
+         border-color:#dae0e5
+         }
+         .btn-light.focus,
+         .btn-light:focus{
+         box-shadow:0 0 0 .2rem rgba(216,217,219,.5)
+         }
+         .btn-light.disabled,.btn-light:disabled{
+         color:#212529;
+         background-color:#f8f9fa;
+         border-color:#f8f9fa
+         }
+         .embed-responsive{
+         position:relative;
+         display:block;
+         width:100%;
+         padding:0;
+         overflow:hidden
+         }
+         .embed-responsive::before{
+         display:block;
+         content:""
+         }
+         .embed-responsive .embed-responsive-item,
+         .embed-responsive embed,
+         .embed-responsive iframe,
+         .embed-responsive object,
+         .embed-responsive video{
+         position:absolute;
+         top:0;
+         bottom:0;
+         left:0;
+         width:100%;
+         height:100%;
+         border:0
+         }
+         .embed-responsive-21by9::before{
+         padding-top:42.857143%
+         }
+         .embed-responsive-16by9::before{
+         padding-top:56.25%
+         }
+         .embed-responsive-3by4::before{
+         padding-top:133.333333%
+         }
+         .embed-responsive-1by1::before{
+         padding-top:100%
+         }
+         .img-fluid{max-width:100%;height:auto}
+         .form-text{display:block;margin-top:.25rem}
+         .text-muted{color:#6c757d!important}
+         .was-validated .form-control:valid{
+         border-color:#28a745;
+         padding-right:2.25rem;
+         background-repeat:no-repeat;
+         background-position:center right calc(2.25rem / 4);
+         background-size:calc(2.25rem / 2) calc(2.25rem / 2);
+         background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e")
+         }
+         .form-control.is-valid:focus,.was-validated .form-control:valid:focus{
+         border-color:#28a745;
+         box-shadow:0 0 0 .2rem rgba(40,167,69,.25)}
+         .form-control.is-valid~.valid-feedback,
+         .form-control.is-valid~.valid-tooltip,
+         .was-validated .form-control:valid~.valid-feedback,
+         .was-validated .form-control:valid~.valid-tooltip{
+         display:block
+         }
+         .was-validated textarea.form-control:valid,textarea.form-control.is-valid{
+         padding-right:2.25rem;
+         background-position:top calc(2.25rem / 4) right calc(2.25rem / 4)
+         }
+         .form-control.is-invalid,.was-validated .form-control:invalid{
+         border-color:#dc3545;
+         padding-right:2.25rem;
+         background-repeat:no-repeat;
+         background-position:center right calc(2.25rem / 4);
+         background-size:calc(2.25rem / 2) calc(2.25rem / 2);
+         background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23d9534f' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E")
+         }
+         .form-control.is-invalid:focus,.was-validated .form-control:invalid:focus{
+         border-color:#dc3545;
+         box-shadow:0 0 0 .2rem rgba(220,53,69,.25)
+         }
+         .form-control.is-invalid~.invalid-feedback,.form-control.is-invalid~.invalid-tooltip,.was-validated .form-control:invalid~.invalid-feedback,.was-validated .form-control:invalid~.invalid-tooltip{
+         display:block
+         }
+         .was-validated textarea.form-control:invalid,textarea.form-control.is-invalid{
+         padding-right:2.25rem;
+         background-position:top calc(2.25rem / 4) right calc(2.25rem / 4)
+         }
+         .disabled-account-modal {
+         display: block;
+         position: fixed;
+         z-index: 999;
+         padding-top: 100px;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         background-color: #000;
+         background-color: rgba(0,0,0,.6);
+         }
+         .disabled-account-modal .disabled-account-modal-content {
+         background-color: #fefefe;
+         margin: auto;
+         padding: 40px;
+         width: 500px;
+         height: 320px;
+         border-radius: 10px;
+         text-align: center;
+         }
+         .disabled-account-modal .disabled-account-modal-content .disabled-account-modal-create-funnels {
+         margin-top: 35px;
+         font-size: 20px;
+         color: #435569;
+         font-weight: 700;
+         }
+         .disabled-account-modal .disabled-account-modal-content .disabled-account-modal-your-page {
+         font-size: 12px;
+         color: #435569;
+         }
+         .disabled-account-modal .disabled-account-modal-content .disabled-account-modal-learn-more {
+         margin-top: 55px;
+         }
+         .form-check {
+         position:relative;
+         display:block;
+         padding-left:1.25rem
+         }
+         .form-check-input {
+         position:absolute;
+         margin-top:.1rem;
+         margin-left:-1.25rem
+         }
+         .form-check-input:disabled~.form-check-label {
+         color:#6c757d
+         }
+         .form-check-label {
+         margin-bottom:0
+         }
+         .form-check-inline {
+         display:-webkit-inline-box;
+         display:-ms-inline-flexbox;
+         display:inline-flex;
+         -webkit-box-align:center;
+         -ms-flex-align:center;
+         align-items:center;
+         padding-left:0;
+         margin-right:.75rem
+         }
+         .form-check-inline .form-check-input {
+         position:static;
+         margin-top:0;
+         margin-right:.3125rem;
+         margin-left:0
+         }
+         .form-check-input.is-valid~.valid-feedback,.form-check-input.is-valid~.valid-tooltip,.was-validated .form-check-input:valid~.valid-feedback,.was-validated .form-check-input:valid~.valid-tooltip {
+         display:block
+         }
+         .form-check-input.is-invalid~.form-check-label,.was-validated .form-check-input:invalid~.form-check-label {
+         color:#dc3545
+         }
+         .form-check-input.is-invalid~.invalid-feedback,.form-check-input.is-invalid~.invalid-tooltip,.was-validated .form-check-input:invalid~.invalid-feedback,.was-validated .form-check-input:invalid~.invalid-tooltip {
+         display:block
+         }
+         .form-check {
+         width:100%
+         }
+      </style>
+      <style data-styled="AWBss ggvrfq bvbICs UXdnW bAxzFt dYZNJa lhEoEP bYobXk ffPfKa ciVdqw AEhbx eGebhJ dZowNJ fhrpOY hYXQga hOWTbv fdcoUl efsFKb fdXuGi iFqcFj gSRdOb gVGgUq bFyaVL cMGLhW dcTbuT hUkaJK bqEFJI evojiE idzqkn dMIOGE kHAGGG haRuzL gYmfkg eBOhzO bDvNJH dpylji hzLWSm kqJlca ktqxoR imGtaz bWMmli hgVCei ebCbFv gYjEmU cUCotq kmmPPL iYkQIQ dETvhQ eGilCI fKqHaD gysmcD fEvFVT cyZhnU QYoUZ jBMpAC dNLkZV gmYMYY bPhCmB dgIdeD eqfDiq EUDkv jAedyw hCVdzA gqadZE dPwdIj kaNpWl dFZjNk jKOEkw fwBefP QiOh rUVsy kfnOCG dHVSdO dvPXUV draTEl iZACxN DPXnI hgAepW giXHrf eZeEua gCCyue iGAVWy bSIXOX hCcQJo fKukId" data-styled-version="4.1.3">
+         /* sc-component-id: sc-global-2541213546 */
+         body{font-family:auto;font-family:Montserrat;}
+         /* sc-component-id: sc-global-836452597 */
+         #react-app{width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;} html{-webkit-scroll-behavior:smooth;-moz-scroll-behavior:smooth;-ms-scroll-behavior:smooth;scroll-behavior:smooth;} body{margin:0px;} form{margin-bottom:0;} b,strong{font-weight:bold;} p{margin:0;} .embed-responsive .embed-responsive-item,.embed-responsive embed,.embed-responsive iframe,.embed-responsive object,.embed-responsive video{top:2px;} .fb-comments{width:100% !important;height:100% !important;} .fb-comments iframe{border:0;display:block;margin:0 auto;width:100% !important;height:100% !important;} .hidden{display:none;}
+         /* sc-component-id: sc-jzJRlG */
+         .DPXnI{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row;-ms-flex-flow:row;flex-flow:row;-webkit-flex:none;-ms-flex:none;flex:none;-webkit-box-pack:space-around;-webkit-justify-content:space-around;-ms-flex-pack:space-around;justify-content:space-around;padding:0;margin-bottom:0;margin-top:0;width:100%;} @media (max-width:820px) and (min-width:600px){.DPXnI{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row;-ms-flex-flow:row;flex-flow:row;-webkit-flex:none;-ms-flex:none;flex:none;-webkit-box-pack:space-around;-webkit-justify-content:space-around;-ms-flex-pack:space-around;justify-content:space-around;padding:0;margin-bottom:0;margin-top:0;width:100%;}} @media (max-width:479px){.DPXnI{-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;-webkit-flex:none;-ms-flex:none;flex:none;-webkit-box-pack:space-around;-webkit-justify-content:space-around;-ms-flex-pack:space-around;justify-content:space-around;padding:0;margin-bottom:0;margin-top:-66px;width:100%;}}.hgAepW{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row;-ms-flex-flow:row;flex-flow:row;-webkit-flex:none;-ms-flex:none;flex:none;-webkit-box-pack:space-around;-webkit-justify-content:space-around;-ms-flex-pack:space-around;justify-content:space-around;padding:0;margin-bottom:0;margin-top:0;width:100%;} @media (max-width:820px) and (min-width:600px){.hgAepW{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row;-ms-flex-flow:row;flex-flow:row;-webkit-flex:none;-ms-flex:none;flex:none;-webkit-box-pack:space-around;-webkit-justify-content:space-around;-ms-flex-pack:space-around;justify-content:space-around;padding:0;margin-bottom:0;margin-top:0;width:100%;}} @media (max-width:479px){.hgAepW{-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;-webkit-flex:none;-ms-flex:none;flex:none;-webkit-box-pack:space-around;-webkit-justify-content:space-around;-ms-flex-pack:space-around;justify-content:space-around;padding:0;margin-bottom:0;margin-top:0;width:100%;}}.giXHrf{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row;-ms-flex-flow:row;flex-flow:row;-webkit-flex:none;-ms-flex:none;flex:none;-webkit-box-pack:space-around;-webkit-justify-content:space-around;-ms-flex-pack:space-around;justify-content:space-around;padding:0;margin-bottom:0;margin-top:7px;width:100%;} @media (max-width:820px) and (min-width:600px){.giXHrf{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row;-ms-flex-flow:row;flex-flow:row;-webkit-flex:none;-ms-flex:none;flex:none;-webkit-box-pack:space-around;-webkit-justify-content:space-around;-ms-flex-pack:space-around;justify-content:space-around;padding:0;margin-bottom:0;margin-top:0;width:100%;}} @media (max-width:479px){.giXHrf{-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;-webkit-flex:none;-ms-flex:none;flex:none;-webkit-box-pack:space-around;-webkit-justify-content:space-around;-ms-flex-pack:space-around;justify-content:space-around;padding:0;margin-bottom:0;margin-top:0;width:100%;}}
+         /* sc-component-id: sc-cSHVUG */
+         .eZeEua{list-style:none;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;padding-top:5px;padding-bottom:5px;padding-left:5px;padding-right:5px;margin-right:0;position:relative;min-width:50%;} @media (max-width:820px) and (min-width:600px){.eZeEua{list-style:none;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;padding-top:5px;padding-bottom:5px;padding-left:5px;padding-right:5px;margin-right:0;position:relative;min-width:50%;}} @media (max-width:479px){.eZeEua{list-style:none;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;padding-top:5px;padding-bottom:5px;padding-left:5px;padding-right:5px;margin-right:0;margin-bottom:0;position:relative;min-width:50%;}}.gCCyue{list-style:none;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;padding-top:5px;padding-bottom:5px;padding-left:5px;padding-right:5px;margin-right:0;position:relative;min-width:100%;} @media (max-width:820px) and (min-width:600px){.gCCyue{list-style:none;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;padding-top:5px;padding-bottom:5px;padding-left:5px;padding-right:5px;margin-right:0;position:relative;min-width:100%;}} @media (max-width:479px){.gCCyue{list-style:none;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;padding-top:5px;padding-bottom:5px;padding-left:5px;padding-right:5px;margin-right:0;margin-bottom:0;position:relative;min-width:100%;}}
+         /* sc-component-id: sc-kgoBCf */
+         .cMGLhW{display:block;text-align:left;margin-top:-54px;margin-left:0;max-width:none;z-index:1;} @media (max-width:820px) and (min-width:600px){.cMGLhW{display:block;text-align:left;margin-top:-54px;margin-left:0;max-width:none;z-index:1;}} @media (max-width:479px){.cMGLhW{display:block;text-align:center;margin-top:-53px;margin-left:0;max-width:none;z-index:1;}}.dcTbuT{font-size:46px;font-weight:700;text-align:left;color:#ffffff;font-family:Montserrat;padding-right:45px;line-height:57px;margin-top:-48px;margin-right:0;margin-bottom:0;margin-left:0;padding-top:5px;padding-bottom:20px;padding-left:5px;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.dcTbuT{text-align:left;padding-right:0px;font-size:21px;line-height:25px;margin-top:-39px;margin-right:0;margin-bottom:0;margin-left:0;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.dcTbuT{text-align:center;font-size:21px;line-height:26px;padding-top:32px;padding-right:3px;padding-bottom:22px;padding-left:1px;margin-top:-69px;margin-right:0;margin-bottom:0;margin-left:0;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.hUkaJK{font-size:28px;color:rgba(254,215,102,1);text-align:left;font-family:Montserrat;font-weight:300;line-height:31px;padding-right:50px;margin-top:-5px;margin-right:0;margin-bottom:0;margin-left:0;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.hUkaJK{text-align:left;font-size:25px;line-height:27px;padding-right:0px;margin-top:-6px;margin-right:0;margin-bottom:0;margin-left:0;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.hUkaJK{text-align:center;font-size:26px;line-height:27px;padding-top:5px;padding-right:0px;padding-bottom:20px;padding-left:0px;margin-top:-12px;margin-right:0;margin-bottom:0;margin-left:0;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.bqEFJI{font-size:20px;color:#90ee2c;text-align:left;font-family:Montserrat;font-weight:300;line-height:24px;padding-right:50px;margin-top:21px;margin-right:0;margin-bottom:0;margin-left:0;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.bqEFJI{text-align:left;font-size:15px;line-height:18px;padding-right:0px;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.bqEFJI{text-align:center;font-size:15px;line-height:18px;padding-top:5px;padding-right:5px;padding-bottom:24px;padding-left:5px;margin-top:-1px;margin-right:0;margin-bottom:0;margin-left:0;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.evojiE{font-size:23px;color:rgba(254,215,102,1);text-align:left;font-family:Montserrat;font-weight:300;line-height:24px;padding-right:50px;margin-top:12px;margin-right:0;margin-bottom:0;margin-left:0;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.evojiE{text-align:left;font-size:18px;line-height:22px;padding-right:0px;margin-top:9px;margin-right:0;margin-bottom:0;margin-left:0;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.evojiE{text-align:center;font-size:18px;line-height:20px;padding-top:5px;padding-right:5px;padding-bottom:5px;padding-left:5px;margin-top:-4px;margin-right:0;margin-bottom:0;margin-left:0;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.idzqkn{display:block;text-align:center;margin-top:-13px;margin-left:0;max-width:none;z-index:1;} @media (max-width:820px) and (min-width:600px){.idzqkn{display:none;text-align:center;margin-top:-13px;margin-left:0;max-width:none;z-index:1;}} @media (max-width:479px){.idzqkn{display:none;text-align:center;max-width:none;z-index:1;}}.dMIOGE{display:none;text-align:center;max-width:none;z-index:1;} @media (max-width:820px) and (min-width:600px){.dMIOGE{display:block;text-align:center;margin-top:-42px;margin-left:0;max-width:none;z-index:1;}} @media (max-width:479px){.dMIOGE{display:block;text-align:center;margin-top:-52px;margin-left:0;max-width:none;z-index:1;}}.kHAGGG{display:block;text-align:center;margin-top:0px;max-width:none;z-index:1;} @media (max-width:820px) and (min-width:600px){.kHAGGG{display:block;text-align:center;max-width:none;z-index:1;}} @media (max-width:479px){.kHAGGG{display:block;text-align:center;max-width:none;z-index:1;}}.haRuzL{font-size:48px;color:#666666;font-family:Montserrat;font-weight:300;line-height:55px;margin-top:4px;padding-top:5px;padding-right:5px;padding-bottom:25px;padding-left:5px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.haRuzL{font-size:32px;line-height:39px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.haRuzL{font-size:17px;margin-top:4px;line-height:18px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.gYmfkg{display:block;text-align:center;max-width:none;z-index:1;} @media (max-width:820px) and (min-width:600px){.gYmfkg{display:block;text-align:left;max-width:none;z-index:1;}} @media (max-width:479px){.gYmfkg{display:block;text-align:center;margin-top:-2px;margin-left:0;max-width:none;z-index:1;}}.eBOhzO{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:relative;width:100%;z-index:1;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;margin-top:2px;padding-top:5px;padding-bottom:5px;padding-left:5px;padding-right:5px;} @media (max-width:820px) and (min-width:600px){.eBOhzO{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:relative;width:100%;z-index:1;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-top:20px;padding-top:5px;padding-bottom:5px;padding-left:5px;padding-right:5px;}} @media (max-width:479px){.eBOhzO{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:relative;width:100%;z-index:1;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-top:5px;padding-top:5px;padding-bottom:5px;padding-left:0px;padding-right:10px;}}.bDvNJH{text-align:left;color:#555555;font-size:19px;line-height:24px;} @media (max-width:820px) and (min-width:600px){.bDvNJH{text-align:left;font-size:14px;line-height:19px;}} @media (max-width:479px){.bDvNJH{text-align:left;font-size:14px;line-height:20px;}}.dpylji{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-top:-17px;margin-left:0;z-index:1;} @media (max-width:820px) and (min-width:600px){.dpylji{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-top:60px;z-index:1;}} @media (max-width:479px){.dpylji{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;z-index:1;}}@media (max-width:820px) and (min-width:600px){.hzLWSm{width:100%;}} @media (max-width:479px){.hzLWSm{width:100%;}}.kqJlca{font-size:20px;color:#90ee2c;text-align:left;font-family:Montserrat;font-weight:300;line-height:24px;margin-top:10px;padding-right:40px;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.kqJlca{padding-right:0px;text-align:left;font-size:18px;line-height:20px;margin-top:21px;margin-right:0;margin-bottom:0;margin-left:0;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.kqJlca{text-align:center;padding-right:0px;font-size:18px;line-height:22px;margin-top:5px;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.ktqxoR{font-size:46px;font-weight:700;color:#ffffff;text-align:left;font-family:Montserrat;line-height:50px;margin-top:10px;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.ktqxoR{text-align:left;font-size:38px;line-height:38px;margin-top:10px;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.ktqxoR{font-size:38px;line-height:38px;text-align:center;margin-top:15px;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.imGtaz{font-size:46px;font-weight:700;color:#333333;font-family:Montserrat;line-height:57px;margin-top:40px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.imGtaz{font-size:35px;margin-top:30px;line-height:37px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.imGtaz{font-size:19px;line-height:24px;margin-top:27px;margin-right:0;margin-bottom:0;margin-left:0;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.bWMmli{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;line-height:1.5;} @media (max-width:820px) and (min-width:600px){.bWMmli{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;line-height:1.5;}} @media (max-width:479px){.bWMmli{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;line-height:1.5;}}.hgVCei{font-size:26px;font-weight:600;color:#212529;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.hgVCei{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.hgVCei{margin-top:83px;margin-right:0;margin-bottom:0;margin-left:0;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.ebCbFv{display:block;text-align:center;margin-top:-38px;margin-left:0;max-width:none;z-index:1;} @media (max-width:820px) and (min-width:600px){.ebCbFv{display:block;text-align:center;max-width:none;z-index:1;}} @media (max-width:479px){.ebCbFv{display:block;text-align:center;max-width:none;z-index:1;}}.gYjEmU{font-size:16px;color:#212529;text-align:left;padding-top:5px;padding-right:5px;padding-bottom:5px;padding-left:69px;margin-top:-21px;margin-right:0;margin-bottom:0;margin-left:0;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.gYjEmU{font-size:14px;text-align:left;padding-top:5px;padding-right:5px;padding-bottom:5px;padding-left:31px;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.gYjEmU{text-align:left;padding-top:5px;padding-right:5px;padding-bottom:5px;padding-left:17px;font-size:15px;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.cUCotq{font-size:37px;font-weight:700;line-height:86px;margin-top:-9px;color:#333333;font-family:Montserrat;margin-right:0;margin-bottom:0;margin-left:0;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.cUCotq{font-size:23px;margin-top:-21px;margin-right:0;margin-bottom:0;margin-left:0;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.cUCotq{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.kmmPPL{font-size:37px;font-weight:700;line-height:86px;margin-top:-9px;color:#333333;font-family:Montserrat;margin-right:0;margin-bottom:0;margin-left:0;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.kmmPPL{font-size:17px;margin-top:-56px;margin-right:0;margin-bottom:0;margin-left:0;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.kmmPPL{font-size:23px;margin-top:-43px;margin-right:0;margin-bottom:0;margin-left:0;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.iYkQIQ{font-size:26px;font-weight:600;text-align:center;color:#212529;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.iYkQIQ{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.iYkQIQ{margin-top:65px;margin-right:0;margin-bottom:0;margin-left:0;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.dETvhQ{display:block;text-align:center;margin-top:-63px;margin-left:0;max-width:none;z-index:1;} @media (max-width:820px) and (min-width:600px){.dETvhQ{display:block;text-align:center;max-width:none;z-index:1;}} @media (max-width:479px){.dETvhQ{display:block;text-align:center;margin-top:-44px;margin-left:0;max-width:none;z-index:1;}}.eGilCI{font-size:14px;text-align:left;color:#212529;padding-top:0px;padding-right:5px;padding-bottom:5px;padding-left:100px;margin-top:-53px;margin-right:0;margin-bottom:0;margin-left:0;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.eGilCI{text-align:left;padding-top:5px;padding-right:5px;padding-bottom:5px;padding-left:38px;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.eGilCI{text-align:left;padding-top:5px;padding-right:5px;padding-bottom:5px;padding-left:33px;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.fKqHaD{font-size:14px;text-align:left;color:#212529;padding-top:0px;padding-right:5px;padding-bottom:5px;padding-left:100px;margin-top:-13px;margin-right:0;margin-bottom:0;margin-left:0;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.fKqHaD{text-align:left;padding-top:5px;padding-right:5px;padding-bottom:5px;padding-left:38px;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.fKqHaD{text-align:left;padding-top:5px;padding-right:5px;padding-bottom:5px;padding-left:33px;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.gysmcD{display:block;text-align:center;margin-top:-1px;margin-left:0;max-width:none;z-index:1;} @media (max-width:820px) and (min-width:600px){.gysmcD{display:block;text-align:center;margin-top:-8px;margin-left:0;max-width:none;z-index:1;}} @media (max-width:479px){.gysmcD{display:block;text-align:center;margin-top:82px;margin-left:0;max-width:none;z-index:1;}}.fEvFVT{font-size:71px;font-weight:700;color:#ffffff;font-family:Montserrat;line-height:57px;margin-top:-100px;margin-right:0;margin-bottom:0;margin-left:0;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.fEvFVT{font-size:42px;margin-top:-100px;margin-right:0;margin-bottom:0;margin-left:0;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.fEvFVT{font-size:33px;line-height:42px;margin-top:-45px;margin-right:0;margin-bottom:0;margin-left:0;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.cyZhnU{font-size:29px;color:#ffffff;font-family:Montserrat;font-weight:300;line-height:38px;margin-top:-87px;text-align:center;padding-top:100px;padding-right:5px;padding-bottom:5px;padding-left:0px;margin-right:0;margin-bottom:0;margin-left:0;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.cyZhnU{font-size:18px;line-height:22px;margin-top:-73px;margin-right:0;margin-bottom:0;margin-left:0;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.cyZhnU{font-size:15px;line-height:20px;text-align:left;padding-top:5px;padding-right:5px;padding-bottom:0px;padding-left:15px;margin-top:2px;margin-right:0;margin-bottom:0;margin-left:0;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.QYoUZ{font-size:59px;font-weight:700;line-height:86px;margin-top:1px;color:rgba(255,255,255,1);font-family:Montserrat;margin-right:0;margin-bottom:0;margin-left:0;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.QYoUZ{font-size:41px;margin-top:-32px;margin-right:0;margin-bottom:0;margin-left:0;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.QYoUZ{font-size:37px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.jBMpAC{font-size:23px;font-weight:700;line-height:86px;margin-top:14px;color:rgba(255,255,255,1);font-family:Montserrat;margin-right:0;margin-bottom:0;margin-left:0;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.jBMpAC{font-size:15px;margin-top:4px;margin-right:0;margin-bottom:0;margin-left:0;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.jBMpAC{font-size:15px;margin-top:20px;margin-right:0;margin-bottom:0;margin-left:0;line-height:21px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.dNLkZV{display:block;text-align:center;max-width:none;z-index:1;} @media (max-width:820px) and (min-width:600px){.dNLkZV{display:block;text-align:center;max-width:none;z-index:1;}} @media (max-width:479px){.dNLkZV{display:block;text-align:center;max-width:none;z-index:1;}}.gmYMYY{font-size:26px;font-weight:600;text-align:center;color:#212529;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.gmYMYY{font-size:21px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.gmYMYY{font-size:21px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.bPhCmB{font-size:21px;text-align:justify;color:#212529;padding-top:5px;padding-right:5px;padding-bottom:5px;padding-left:0px;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.bPhCmB{font-size:18px;text-align:justify;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.bPhCmB{font-size:16px;text-align:justify;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.dgIdeD{font-size:26px;font-weight:600;color:#212529;margin-top:88px;margin-right:0;margin-bottom:0;margin-left:0;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.dgIdeD{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.dgIdeD{font-size:21px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.eqfDiq{display:block;text-align:center;margin-top:19px;margin-left:0;max-width:none;z-index:1;} @media (max-width:820px) and (min-width:600px){.eqfDiq{display:block;text-align:center;max-width:none;z-index:1;}} @media (max-width:479px){.eqfDiq{display:block;text-align:center;max-width:none;z-index:1;}}.EUDkv{font-size:26px;font-weight:600;text-align:center;color:#212529;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.EUDkv{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.EUDkv{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}.jAedyw{font-size:20px;text-align:center;color:#212529;margin-top:22px;margin-right:0;margin-bottom:0;margin-left:0;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;} @media (max-width:820px) and (min-width:600px){.jAedyw{text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}} @media (max-width:479px){.jAedyw{font-size:16px;text-align:center;-webkit-text-decoration:none;text-decoration:none;cursor:auto;width:100%;}}
+         /* sc-component-id: sc-kGXeez */
+         .bSIXOX{background:#,9,0,e,e;background-color:#90ee2c;font-family:Montserrat;font-weight:700;font-size:16px;color:#333333;width:87%;padding-top:17px;padding-bottom:17px;border-radius:50px;margin-top:35px;} @media (max-width:820px) and (min-width:600px){.bSIXOX{margin-top:-13px;width:100%;margin-right:0;margin-bottom:0;margin-left:0;}} @media (max-width:479px){.bSIXOX{width:90%;margin-top:-10px;margin-right:0;margin-bottom:0;margin-left:0;}}.hCcQJo{background:#,9,0,e,e;background-color:#90ee2c;font-family:Montserrat;font-weight:700;font-size:16px;color:#333333;width:87%;padding-top:17px;padding-bottom:17px;border-radius:50px;margin-top:35px;} @media (max-width:820px) and (min-width:600px){.hCcQJo{margin-top:-13px;width:100%;margin-right:0;margin-bottom:0;margin-left:0;}} @media (max-width:479px){.hCcQJo{width:90%;margin-top:-11px;margin-right:0;margin-bottom:0;margin-left:0;}}.fKukId{background:#,9,0,e,e;background-color:#90ee2c;margin-top:11px;border-radius:50px;font-family:Montserrat;font-weight:700;color:#333333;font-size:16px;padding-top:30px;padding-bottom:27px;width:42%;margin-right:0;margin-bottom:0;margin-left:0;padding-right:5px;padding-left:5px;} @media (max-width:820px) and (min-width:600px){.fKukId{width:60%;padding-top:21px;padding-bottom:21px;margin-top:-5px;margin-right:0;margin-bottom:0;margin-left:0;}} @media (max-width:479px){.fKukId{width:90%;padding-top:21px;padding-bottom:21px;font-size:14px;margin-top:-2px;margin-right:0;margin-bottom:0;margin-left:0;}}
+         /* sc-component-id: sc-kpOJdX */
+         .hCVdzA{width:200px;height:200px;max-width:100%;cursor:auto;object-fit:contain;} @media (max-width:820px) and (min-width:600px){.hCVdzA{width:150px;height:150px;max-width:100%;cursor:auto;object-fit:contain;}} @media (max-width:479px){.hCVdzA{width:185px;height:185px;max-width:100%;cursor:auto;object-fit:contain;}}.gqadZE{width:551px;height:551px;max-width:100%;cursor:auto;object-fit:contain;} @media (max-width:820px) and (min-width:600px){.gqadZE{width:1080px;height:1080px;max-width:100%;cursor:auto;object-fit:contain;}} @media (max-width:479px){.gqadZE{max-width:100%;cursor:auto;object-fit:contain;}}.dPwdIj{width:1080px;height:1080px;max-width:100%;cursor:auto;object-fit:contain;} @media (max-width:820px) and (min-width:600px){.dPwdIj{width:367px;height:367px;max-width:100%;cursor:auto;object-fit:contain;}} @media (max-width:479px){.dPwdIj{width:324px;height:324px;max-width:100%;cursor:auto;object-fit:contain;}}.kaNpWl{max-width:100%;cursor:auto;object-fit:contain;} @media (max-width:820px) and (min-width:600px){.kaNpWl{max-width:100%;cursor:auto;object-fit:contain;}} @media (max-width:479px){.kaNpWl{max-width:100%;cursor:auto;object-fit:contain;}}.dFZjNk{width:431px;height:430px;max-width:100%;cursor:auto;object-fit:contain;} @media (max-width:820px) and (min-width:600px){.dFZjNk{width:353px;height:353px;max-width:100%;cursor:auto;object-fit:contain;}} @media (max-width:479px){.dFZjNk{width:353px;height:353px;max-width:100%;cursor:auto;object-fit:contain;}}.jKOEkw{max-width:100%;margin:20px 20px 0 0px;height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;} @media (max-width:820px) and (min-width:600px){.jKOEkw{max-width:100%;margin:25px 20px 0 0px;height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;}} @media (max-width:479px){.jKOEkw{max-width:100%;margin:30px 20px 0 0px;height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;}}.fwBefP{width:551px;height:551px;max-width:100%;cursor:auto;object-fit:contain;} @media (max-width:820px) and (min-width:600px){.fwBefP{width:400px;height:400px;max-width:100%;cursor:auto;object-fit:contain;}} @media (max-width:479px){.fwBefP{width:421px;height:421px;max-width:100%;cursor:auto;object-fit:contain;}}.QiOh{width:464px;height:464px;max-width:100%;cursor:auto;object-fit:contain;} @media (max-width:820px) and (min-width:600px){.QiOh{width:356px;height:356px;max-width:100%;cursor:auto;object-fit:contain;}} @media (max-width:479px){.QiOh{width:367px;height:367px;max-width:100%;cursor:auto;object-fit:contain;}}.rUVsy{width:621px;height:470px;max-width:100%;cursor:auto;object-fit:contain;} @media (max-width:820px) and (min-width:600px){.rUVsy{width:484px;height:367px;max-width:100%;cursor:auto;object-fit:fill;}} @media (max-width:479px){.rUVsy{width:353px;height:345px;max-width:100%;cursor:auto;object-fit:contain;}}.kfnOCG{width:283px;height:283px;max-width:100%;cursor:auto;object-fit:contain;} @media (max-width:820px) and (min-width:600px){.kfnOCG{max-width:100%;cursor:auto;object-fit:contain;}} @media (max-width:479px){.kfnOCG{max-width:100%;cursor:auto;object-fit:contain;}}.dHVSdO{width:200px;height:100px;max-width:100%;cursor:pointer;object-fit:contain;} @media (max-width:820px) and (min-width:600px){.dHVSdO{max-width:100%;cursor:pointer;object-fit:contain;}} @media (max-width:479px){.dHVSdO{max-width:100%;cursor:pointer;object-fit:contain;}}
+         /* sc-component-id: sc-kEYyzF */
+         .draTEl{z-index:1;background:rgba(0,0,0,0.4);position:absolute;top:0;left:0;width:100%;height:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-image:url('https://i.ytimg.com/vi/5XvmtnjoB4I/hqdefault.jpg');background-size:cover;background-position:center;}
+         /* sc-component-id: sc-kkGfuU */
+         .iZACxN{width:70px;opacity:0.8;cursor:pointer;}
+         /* sc-component-id: sc-iAyFgw */
+         .iGAVWy{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;z-index:1;error: false;} @media (max-width:820px) and (min-width:600px){.iGAVWy{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;z-index:1;}} @media (max-width:479px){.iGAVWy{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;z-index:1;}}
+         /* sc-component-id: sc-dNLxif */
+         .dvPXUV{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;z-Index:1;}
+         /* sc-component-id: sc-kTUwUJ */
+         .fdcoUl{padding:5px;margin:0;} @media (max-width:820px) and (min-width:600px){} @media (max-width:479px){}.efsFKb{padding:5px;margin:0;padding-bottom:0px;} @media (max-width:820px) and (min-width:600px){} @media (max-width:479px){}.fdXuGi{padding:5px;margin:0;} @media (max-width:820px) and (min-width:600px){} @media (max-width:479px){.fdXuGi{padding-bottom:130px;}}.iFqcFj{padding:5px;margin:0;padding-left:55px;} @media (max-width:820px) and (min-width:600px){.iFqcFj{padding-left:10px;}} @media (max-width:479px){.iFqcFj{padding-left:5px;background:url(https://rck.imgix.net/Lk94u0QflUqnRK8uHvh0kw/images/2TZrHXyUSz89aAqXBJMg.png) center center / auto repeat scroll rgba(218,210,210,0);}}.gSRdOb{padding:5px;margin:0;padding-left:25px;padding-right:25px;padding-bottom:125px;background:url() center center / auto repeat scroll rgba(218,210,210,0);} @media (max-width:820px) and (min-width:600px){.gSRdOb{padding-left:10px;padding-right:10px;padding-bottom:50px;}} @media (max-width:479px){.gSRdOb{padding-left:5px;padding-right:5px;padding-bottom:25px;}}.gVGgUq{padding:5px;margin:0;padding-bottom:95px;} @media (max-width:820px) and (min-width:600px){.gVGgUq{padding-bottom:55px;}} @media (max-width:479px){.gVGgUq{padding-bottom:54px;padding-top:5px;padding-right:5px;padding-left:5px;}}.bFyaVL{padding:5px;margin:0;padding-left:65px;padding-right:5px;padding-bottom:85px;} @media (max-width:820px) and (min-width:600px){.bFyaVL{padding-left:25px;padding-bottom:50px;}} @media (max-width:479px){.bFyaVL{padding-left:30px;padding-right:30px;padding-bottom:40px;}}
+         /* sc-component-id: sc-dqBHgY */
+         .AEhbx{padding:5px;margin:0;padding-bottom:65px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;} @media (max-width:820px) and (min-width:600px){.AEhbx{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}} @media (max-width:479px){.AEhbx{padding-bottom:30px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}.eGebhJ{padding:5px;margin:0;padding-bottom:0px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;} @media (max-width:820px) and (min-width:600px){.eGebhJ{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}} @media (max-width:479px){.eGebhJ{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}.dZowNJ{padding:5px;margin:0;margin-top:34px;padding-bottom:27px;margin-right:0;margin-bottom:0;margin-left:0;padding-top:5px;padding-right:5px;padding-left:5px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;} @media (max-width:820px) and (min-width:600px){.dZowNJ{margin-top:30px;padding-bottom:30px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}} @media (max-width:479px){.dZowNJ{margin-top:40px;padding-bottom:40px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}.fhrpOY{padding:5px;margin:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;} @media (max-width:820px) and (min-width:600px){.fhrpOY{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}} @media (max-width:479px){.fhrpOY{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}.hYXQga{padding:5px;margin:0;padding-top:0px;padding-right:5px;padding-bottom:5px;padding-left:5px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;} @media (max-width:820px) and (min-width:600px){.hYXQga{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}} @media (max-width:479px){.hYXQga{margin-top:-100px;margin-right:0;margin-bottom:0;margin-left:0;padding-top:0px;padding-right:5px;padding-bottom:5px;padding-left:5px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}.hOWTbv{padding:5px;margin:0;padding-left:0px;padding-bottom:0px;padding-top:0px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;} @media (max-width:820px) and (min-width:600px){.hOWTbv{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}} @media (max-width:479px){.hOWTbv{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}
+         /* sc-component-id: sc-gxMtzJ */
+         .ggvrfq{padding:5px;background-color:#202020;display:initial;} @media (max-width:820px) and (min-width:600px){.ggvrfq{background:url(https://rck.imgix.net/Lk94u0QflUqnRK8uHvh0kw/images/2TZrHXyUSz89aAqXBJMg.png) center center / auto repeat scroll rgba(32,32,32,1);display:initial;}} @media (max-width:479px){.ggvrfq{display:initial;}}.bvbICs{padding:5px;background:url(https://rck.imgix.net/Lk94u0QflUqnRK8uHvh0kw/images/2TZrHXyUSz89aAqXBJMg.png) top center / cover no-repeat scroll rgba(218,210,210,0);display:initial;} @media (max-width:820px) and (min-width:600px){.bvbICs{background:url(https://rck.imgix.net/Lk94u0QflUqnRK8uHvh0kw/images/2TZrHXyUSz89aAqXBJMg.png) top center / auto no-repeat scroll rgba(218,210,210,0);display:initial;}} @media (max-width:479px){.bvbICs{background:url(https://rck.imgix.net/Lk94u0QflUqnRK8uHvh0kw/images/2TZrHXyUSz89aAqXBJMg.png) top center / auto no-repeat scroll rgba(218,210,210,0);display:initial;}}.UXdnW{padding:5px;background:url(https://rck.imgix.net/qWDdPHrEUeLkK8Np6REw/images/G2mFujfXzUmLj7R9MDS8vQ);background-size:auto;background-position:bottom left;background-repeat:no-repeat;padding-bottom:0px;display:initial;} @media (max-width:820px) and (min-width:600px){.UXdnW{background:url(https://rck.imgix.net/qWDdPHrEUeLkK8Np6REw/images/G2mFujfXzUmLj7R9MDS8vQ);background-size:contain;background-repeat:no-repeat;background-position:bottom left;display:initial;}} @media (max-width:479px){.UXdnW{background:url(https://rck.imgix.net/qWDdPHrEUeLkK8Np6REw/images/G2mFujfXzUmLj7R9MDS8vQ);background-size:contain;background-repeat:no-repeat;background-position:bottom left;display:initial;}}.bAxzFt{padding:5px;background:url(https://rck.imgix.net/Lk94u0QflUqnRK8uHvh0kw/images/2TZrHXyUSz89aAqXBJMg.png) top center / cover no-repeat scroll rgba(218,210,210,0);padding-top:5px;padding-right:5px;padding-bottom:0px;padding-left:5px;display:initial;} @media (max-width:820px) and (min-width:600px){.bAxzFt{display:initial;}} @media (max-width:479px){.bAxzFt{background:url(https://rck.imgix.net/qWDdPHrEUeLkK8Np6REw/images/zbe85artKUyYSOvnTD1N5A);background-size:auto;background-repeat:no-repeat;background-position:top center;margin-top:-100px;margin-right:0;margin-bottom:0;margin-left:0;display:initial;}}.dYZNJa{padding:5px;display:initial;} @media (max-width:820px) and (min-width:600px){.dYZNJa{display:initial;}} @media (max-width:479px){.dYZNJa{display:initial;}}.lhEoEP{padding:5px;background:url(https://rck.imgix.net/Lk94u0QflUqnRK8uHvh0kw/images/2TZrHXyUSz89aAqXBJMg.png) bottom center / cover no-repeat scroll rgba(218,210,210,0);margin-top:-100px;margin-right:0;margin-bottom:0;margin-left:0;padding-top:22px;padding-right:5px;padding-bottom:5px;padding-left:5px;display:initial;} @media (max-width:820px) and (min-width:600px){.lhEoEP{background:url(https://rck.imgix.net/Lk94u0QflUqnRK8uHvh0kw/images/oWSw6AiJu0OlysEBNo0DCA.png) bottom center / cover no-repeat scroll rgba(170,0,0,1);display:initial;}} @media (max-width:479px){.lhEoEP{background:url(https://rck.imgix.net/qWDdPHrEUeLkK8Np6REw/images/8l8Q456fUGsmXat1BnZg);background-size:cover;background-repeat:no-repeat;background-position:bottom left;margin-top:-100px;margin-right:0;margin-bottom:0;margin-left:0;display:initial;}}.bYobXk{padding:5px;margin-top:-250px;padding-bottom:155px;display:initial;} @media (max-width:820px) and (min-width:600px){.bYobXk{display:initial;}} @media (max-width:479px){.bYobXk{display:initial;}}.ffPfKa{padding:5px;padding-left:0px;padding-bottom:0px;background-color:#f6f6f6;padding-top:0px;display:initial;} @media (max-width:820px) and (min-width:600px){.ffPfKa{display:initial;}} @media (max-width:479px){.ffPfKa{display:initial;}}.ciVdqw{padding:5px;background-color:#202020;background:url(https://rck.imgix.net/qWDdPHrEUeLkK8Np6REw/images/I7JMuP5wW0SO7vuiug7Vtw);background-size:auto;background-position:bottom center;background-repeat:repeat-x;display:initial;} @media (max-width:820px) and (min-width:600px){.ciVdqw{display:initial;}} @media (max-width:479px){.ciVdqw{display:initial;}}
+         /* sc-component-id: sc-eXEjpC */
+         .AWBss{position:absolute;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;right:24px;bottom:24px;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;-webkit-flex-flow:column-reverse;-ms-flex-flow:column-reverse;flex-flow:column-reverse;z-index:1000;}
+      </style>
+      <meta data-rh charSet="UTF-8" />
+      <meta data-rh httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <meta data-rh name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta data-rh name="description" />
+      <meta data-rh name="keywords" content="Panorama Bíblico Estudo Biblico" />
+      <meta data-rh property="og:locale" content="en_US" />
+      <meta data-rh property="og:type" content="article" />
+      <meta data-rh property="og:title" content />
+      <meta data-rh property="og:description" content />
+      <meta data-rh property="og:site_name" content />
+      <meta data-rh property="og:url" content />
+      <title data-rh>Panorama Bíblico</title>
+      <script data-rh>
+         function checkStateAndCall(callback) {
+         	var _success = false;
+         	return function () {
+         			if (!_success && (!this.readyState || this.readyState === 'complete')) {
+         				_success = true;
+         				callback();
+         			}
+         	}
+         }
+         
+         function getMain(results) {
+         	function loadNext() {
+         		if (!results.length) {
+         			return;
+         		}
+         
+         		var path = results.shift();
+         		var scriptElm = document.createElement('script');
+         		scriptElm.type = 'text/javascript';
+         		scriptElm.async = true;
+         		scriptElm.src = path;
+         		scriptElm.onload = scriptElm.onreadystatechange = checkStateAndCall(loadNext);
+         
+         		// this one will be ready
+         		var headElm = document.head || document.getElementsByTagName('head')[0];
+         		headElm.appendChild(scriptElm);
+         	}
+         	loadNext(); // start a chain
+         }
+         
+         function getFont(font) {
+         	function loadNext() {
+         		var linkElm = document.createElement('link');
+         		linkElm.type = 'text/css';
+         		linkElm.rel = "stylesheet";
+         		linkElm.href = font;
+         
+         		// this one will be ready
+         		var headElm = document.head || document.getElementsByTagName('head')[0];
+         		headElm.insertBefore(linkElm, headElm.firstChild);
+         	}
+         	loadNext();
+         }
+      </script><script data-rh id="result" type="javascript/worker">
+         self.onmessage = function (e) {
+         	const loadLinkFont = async (initial) => {
+         	const fonts = ['latin', 'latin-ext']
+         	const variants = ['300', 'regular', 'regular', '700', '900']
+         	return await getUrl(initial, fonts, variants)
+         }
+         
+         const getUrl = (font, results, variants) => {
+         	const variantsEnc = variants.join(",")
+         	const familiesEnc = encodeURIComponent(font) +':'+ variantsEnc
+         	let query = '?family='+ familiesEnc
+         
+         	// Query the fonts in the specified
+         	query += '&subset='+ results.join(",") +'&display=swap'
+         
+         	// Fetch and return stylesheet
+         	const FONT_BASE_URL = "https://fonts.googleapis.com/css"
+         	return FONT_BASE_URL + query
+         	}
+         
+         	var links = []
+         	var fonts = ['Montserrat'];
+         	fonts.map((font) => {
+         		if (!links.includes(font)) {
+         				loadLinkFont(font)
+         				.then((result) => {
+         					self.postMessage({ type: 'getFont', link: result });
+         				})
+         				links.push(font)
+         			}
+         		})
+         
+         		setTimeout(function () {
+         			const secondMessage = { type: 'getMain' }
+         			self.postMessage(secondMessage);
+         		}, 2500);
+         };
+      </script><script type="text/javascript">
+         !function(f,b,e,v,n,t,s)
+         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+         n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+         if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+         n.queue=[];t=b.createElement(e);t.async=!0;
+         t.src=v;s=b.getElementsByTagName(e)[0];
+         s.parentNode.insertBefore(t,s)}(window, document,'script',
+         'https://connect.facebook.net/en_US/fbevents.js');
+         fbq('init', '2676969632618564');
+         fbq('track', 'PageView', {}, {eventID: 'PageView.' + window.sessionId});
+         undefined
+      </script>
+   </head>
+   <body>
+      <div id="react-app">
+         <div class="sc-eXEjpC AWBss"></div>
+         <div id="9bc1e995-a398-4cba-a8a3-17a697685936" class="sc-bZQynM sc-kgoBCf container-fluid  sc-gxMtzJ ggvrfq">
+            <div style="padding: 0px;" class="container"></div>
+         </div>
+         <div id="8d601a63-c332-4882-84e1-2a7f4cbbfb69" class="sc-bZQynM sc-kgoBCf container-fluid  sc-gxMtzJ bvbICs">
+            <div style="padding: 0px;" class="container">
+               <div class="sc-bZQynM sc-kgoBCf row  sc-dqBHgY AEhbx">
+                  <div class="sc-bZQynM sc-kgoBCf col-md-6  sc-kTUwUJ fdcoUl">
+                     <div class="sc-bZQynM img-fluid  sc-kgoBCf cMGLhW"><img data-src="https://rck.imgix.net/Lk94u0QflUqnRK8uHvh0kw/images/2EPSa0bW4k2ZVafzynPksg.png" data-widthmap="{&quot;natural&quot;:&quot;500&quot;,&quot;style&quot;:&quot;200&quot;,&quot;tablet&quot;:&quot;150&quot;,&quot;mobile&quot;:&quot;185&quot;}" class="sc-gZMcBi sc-kpOJdX hCVdzA" /></div>
+                     <div class="sc-dNLxif dvPXUV">
+                        <div class="sc-bZQynM sc-kgoBCf dcTbuT">
+                           <p>De Gênesis a Apocalipse, uma explicação simples e didática de todos os livros da Bíblia
+                              &nbsp;
+                           </p>
+                        </div>
+                     </div>
+                     <div class="sc-dNLxif dvPXUV">
+                        <div class="sc-bZQynM sc-kgoBCf hUkaJK">
+                           <p><b>Chega de ler a Bíblia&nbsp;</b></p>
+                           <p><b>e não entender nada!</b></p>
+                        </div>
+                     </div>
+                     <div class="sc-dNLxif dvPXUV">
+                        <div class="sc-bZQynM sc-kgoBCf bqEFJI">
+                           <p><font color="#ffffff">Estudar a&nbsp; Bíblia é uma tarefa que pode parecer difícil: o livro é enorme e não está em ordem cronológica. O Panorama Bíblico veio para ser um facilitador e te ajudar a de uma vez por todas a entender a Bíblia.&nbsp;</font></p>
+                        </div>
+                     </div>
+                     <div class="sc-dNLxif dvPXUV">
+                        <div class="sc-bZQynM sc-kgoBCf evojiE">
+                           <p><b>Você nunca mais vai poder&nbsp;</b></p>
+                           <p><b>dizer que não entende a Bíblia!</b></p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="sc-bZQynM sc-kgoBCf col-md-6  sc-kTUwUJ fdcoUl">
+                     <div class="sc-bZQynM img-fluid  sc-kgoBCf idzqkn"><img data-src="https://rck.imgix.net/Lk94u0QflUqnRK8uHvh0kw/images/A3OSS6ZW0yBTAOKKoPbA.png" data-widthmap="{&quot;natural&quot;:&quot;1080&quot;,&quot;style&quot;:&quot;551&quot;,&quot;tablet&quot;:&quot;1080&quot;,&quot;mobile&quot;:null}" class="sc-gZMcBi sc-kpOJdX gqadZE" /></div>
+                     <div class="sc-bZQynM img-fluid  sc-kgoBCf dMIOGE"><img data-src="https://rck.imgix.net/Lk94u0QflUqnRK8uHvh0kw/images/A3OSS6ZW0yBTAOKKoPbA.png" data-widthmap="{&quot;natural&quot;:&quot;1080&quot;,&quot;style&quot;:&quot;1080&quot;,&quot;tablet&quot;:&quot;367&quot;,&quot;mobile&quot;:&quot;324&quot;}" class="sc-gZMcBi sc-kpOJdX dPwdIj" /></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="4cab85d8-ff30-48b8-9175-8840d506eb66" class="sc-bZQynM sc-kgoBCf container-fluid  sc-gxMtzJ UXdnW">
+            <div style="padding: 0px;" class="container">
+               <div class="sc-bZQynM sc-kgoBCf row  sc-dqBHgY eGebhJ">
+                  <div class="sc-bZQynM sc-kgoBCf col-md-12  sc-kTUwUJ efsFKb">
+                     <div class="sc-bZQynM img-fluid  sc-kgoBCf kHAGGG"><img data-src="https://rck.imgix.net/qWDdPHrEUeLkK8Np6REw/images/wakrSPmVyECc2bFthleTbA" data-widthmap="{&quot;natural&quot;:null,&quot;style&quot;:null,&quot;tablet&quot;:null,&quot;mobile&quot;:null}" class="sc-gZMcBi sc-kpOJdX kaNpWl" /></div>
+                     <div class="sc-dNLxif dvPXUV">
+                        <div class="sc-bZQynM sc-kgoBCf haRuzL">
+                           <p>São 125 páginas de estudo biblico</p>
+                           <p>Contendo o Antigo e Novo Testamento</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="sc-bZQynM sc-kgoBCf row  sc-dqBHgY eGebhJ">
+                  <div class="sc-bZQynM sc-kgoBCf col-md-6  sc-kTUwUJ efsFKb">
+                     <div class="sc-bZQynM img-fluid  sc-kgoBCf gYmfkg"><img data-src="https://rck.imgix.net/Lk94u0QflUqnRK8uHvh0kw/images/m4KcesIqECDXL61YL88g.png" data-widthmap="{&quot;natural&quot;:&quot;431&quot;,&quot;style&quot;:&quot;431&quot;,&quot;tablet&quot;:&quot;353&quot;,&quot;mobile&quot;:&quot;353&quot;}" class="sc-gZMcBi sc-kpOJdX dFZjNk" /></div>
+                  </div>
+                  <div class="sc-bZQynM sc-kgoBCf col-md-6  sc-kTUwUJ fdXuGi">
+                     <div class="sc-bZQynM sc-kgoBCf eBOhzO">
+                        <img data-rck_id="43729303-95cb-4626-9b3d-bc5ba0d0ff53" data-src="https://rck.imgix.net/qWDdPHrEUeLkK8Np6REw/images/ACp6437gTUtt4ujmkNcQ" data-widthmap="{&quot;natural&quot;:null,&quot;style&quot;:null,&quot;tablet&quot;:null,&quot;mobile&quot;:null}" class="sc-gZMcBi sc-kpOJdX jKOEkw" />
+                        <div class="sc-bZQynM sc-kgoBCf bDvNJH">
+                           <b>Se você é aquela pessoa que promete que vai ler a Bíblia até o final do ano, mas logo desiste, pois não consegue entender. Esse estudo é para você!</b>
+                           <div><b><br></b></div>
+                           <div><b>- O que é a Bíblia</b></div>
+                           <div><b>- Como a Bíblia está dividida</b></div>
+                           <div><b>- Como a Bíblia foi escrita<br>- Por onde começar a estudar a Bíblia</b></div>
+                           <div><b>- Qual a sequencia de livros ler</b></div>
+                           <div><b>- Qual a ordem cronológica da Bíblia</b></div>
+                           <div><b>- Quem é o autor de cada livro</b></div>
+                           <div><b>- As principais histórias</b></div>
+                           <div><b>- Os principais personagens</b></div>
+                           <div><b>- Resumo de todos os livros da Bíblia</b></div>
+                           <div><br></div>
+                           <div><b>Tudo com muita imagem para tornar o estudo muito prático e didático.</b></div>
+                           <div><b><br></b></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="73b8b8c7-332e-455e-876a-b9a4a18c45de" class="sc-bZQynM sc-kgoBCf container-fluid  sc-gxMtzJ bAxzFt">
+            <div style="padding: 0px;" class="container">
+               <div class="sc-bZQynM sc-kgoBCf row  sc-dqBHgY dZowNJ">
+                  <div class="sc-bZQynM sc-kgoBCf col-md-7  sc-kTUwUJ fdcoUl">
+                     <div class="sc-bZQynM sc-kgoBCf dpylji">
+                        <div class="sc-bZQynM embed-responsive embed-responsive-16by9 sc-kgoBCf hzLWSm">
+							<iframe src="https://www.youtube.com/embed/5XvmtnjoB4I?controls=1&amp;modestbranding=1&amp;rel=0&amp;showinfo=0" title="" frameborder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true"></iframe>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="sc-bZQynM sc-kgoBCf col-md-5  sc-kTUwUJ iFqcFj">
+                     <div class="sc-dNLxif dvPXUV">
+                        <div class="sc-bZQynM sc-kgoBCf kqJlca">
+                           <p>Descomplicando a Bíblia</p>
+                        </div>
+                     </div>
+                     <div class="sc-dNLxif dvPXUV">
+                        <div class="sc-bZQynM sc-kgoBCf ktqxoR">
+                           <p>O que é o Panorama Bíblico?</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="7c5b6ec4-8d16-4d06-8bd0-9728159faa23" class="sc-bZQynM sc-kgoBCf container-fluid  sc-gxMtzJ dYZNJa">
+            <div style="padding: 0px;" class="container">
+               <div class="sc-bZQynM sc-kgoBCf row  sc-dqBHgY fhrpOY">
+                  <div class="sc-bZQynM sc-kgoBCf col-md-12  sc-kTUwUJ gSRdOb">
+                     <div class="sc-dNLxif dvPXUV">
+                        <div class="sc-bZQynM sc-kgoBCf imGtaz">
+                           <p>APROVEITE OS COMBOS!</p>
+                           <p>ESTUDE MAIS PAGANDO MENOS</p>
+                        </div>
+                     </div>
+                     <div class="sc-bZQynM sc-kgoBCf bWMmli">
+                        <ul class="col-md-12 sc-jzJRlG DPXnI">
+                           <li class="sc-cSHVUG eZeEua">
+                              <div class="sc-dNLxif dvPXUV">
+                                 <div class="sc-bZQynM sc-kgoBCf hgVCei">
+                                    <div>COMBO 4</div>
+                                 </div>
+                              </div>
+                              <div class="sc-bZQynM img-fluid  sc-kgoBCf ebCbFv"><img data-src="https://rck.imgix.net/Lk94u0QflUqnRK8uHvh0kw/images/med0HYEMUUybJjsimqJjg.png" data-widthmap="{&quot;natural&quot;:&quot;1080&quot;,&quot;style&quot;:&quot;551&quot;,&quot;tablet&quot;:&quot;400&quot;,&quot;mobile&quot;:&quot;421&quot;}" class="sc-gZMcBi sc-kpOJdX fwBefP" /></div>
+                              <div class="sc-dNLxif dvPXUV">
+                                 <div class="sc-bZQynM sc-kgoBCf gYjEmU">
+                                    - Panorama Bíblico <br>
+                                    <div>&nbsp;- A história de 200 personagens bíblicos&nbsp;</div>
+                                    <div>- O poder do sangue de Jesus&nbsp;</div>
+                                    <div>- Os 3 anos do ministerio de Jesus&nbsp;</div>
+                                 </div>
+                              </div>
+                              <div class="sc-dNLxif dvPXUV">
+                                 <div class="sc-bZQynM sc-kgoBCf cUCotq">
+                                    <p>12x de R$11,97</p>
+                                 </div>
+                              </div>
+                              <div class="sc-dNLxif dvPXUV">
+                                 <div class="sc-bZQynM sc-kgoBCf kmmPPL">
+                                    <p>ou R$119,90 a vista</p>
+                                 </div>
+                              </div>
+                              <div class="sc-bZQynM sc-kgoBCf sc-iAyFgw iGAVWy"><button type="button" id="bt2" class="sc-iwsKbI btn  sc-kGXeez bSIXOX">COMPRAR COMBO 4</button></div>
+                           </li>
+                           <li class="sc-cSHVUG eZeEua">
+                              <div class="sc-dNLxif dvPXUV">
+                                 <div class="sc-bZQynM sc-kgoBCf iYkQIQ">
+                                    <div>COMBO 6 + BONUS</div>
+                                 </div>
+                              </div>
+                              <div class="sc-bZQynM img-fluid  sc-kgoBCf dETvhQ"><img data-src="https://rck.imgix.net/Lk94u0QflUqnRK8uHvh0kw/images/4UjCh2rZBUa3ZF1zZnNO6w.png" data-widthmap="{&quot;natural&quot;:&quot;1080&quot;,&quot;style&quot;:&quot;464&quot;,&quot;tablet&quot;:&quot;356&quot;,&quot;mobile&quot;:&quot;367&quot;}" class="sc-gZMcBi sc-kpOJdX QiOh" /></div>
+                              <div class="sc-dNLxif dvPXUV">
+                                 <div class="sc-bZQynM sc-kgoBCf eGilCI">
+                                    - Panorama Bíblico&nbsp;
+                                    <div>- Panorama Bíblico Kids</div>
+                                    <div>- A história de 200 personagens bíblicos</div>
+                                    <div>- O poder do sangue de Jesus</div>
+                                    <div>- Os 3 anos do ministerio de Jesus&nbsp;<br></div>
+                                    <div>- Plano de leitura da bíblia em 365 dias</div>
+                                    <div><br></div>
+                                 </div>
+                              </div>
+                              <div class="sc-dNLxif dvPXUV">
+                                 <div class="sc-bZQynM sc-kgoBCf fKqHaD">
+                                    <div><b>LEVE DE BONUS&nbsp;</b></div>
+                                    <div>- <font color="#0693e3">250 quiz bíblico (Perguntas e respostas)&nbsp;</font></div>
+                                    <div><font color="#0693e3">- Oração de Mãe&nbsp;</font></div>
+                                    <div><font color="#0693e3">- 50 temas para culto infantil&nbsp;</font></div>
+                                    <div><font color="#0693e3">- Desvendando o Apocalipse</font><br></div>
+                                 </div>
+                              </div>
+                              <div class="sc-dNLxif dvPXUV">
+                                 <div class="sc-bZQynM sc-kgoBCf cUCotq">
+                                    <p>12x de R$14,96</p>
+                                 </div>
+                              </div>
+                              <div class="sc-dNLxif dvPXUV">
+                                 <div class="sc-bZQynM sc-kgoBCf kmmPPL">
+                                    <p>ou R$149,90 a vista</p>
+                                 </div>
+                              </div>
+                              <div class="sc-bZQynM sc-kgoBCf sc-iAyFgw iGAVWy"><button type="button" id="bt3" class="sc-iwsKbI btn  sc-kGXeez hCcQJo">COMPRAR COMBO 6 + BONUS</button></div>
+                              <div class="sc-dNLxif dvPXUV">
+                                 <div class="sc-bZQynM sc-kgoBCf cUCotq">
+                                    <p><br></p>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="56a59009-5d73-4527-9edf-e3f195f748be" class="sc-bZQynM sc-kgoBCf container-fluid  sc-gxMtzJ lhEoEP">
+            <div style="padding: 0px;" class="container">
+               <div class="sc-bZQynM sc-kgoBCf row  sc-dqBHgY hYXQga">
+                  <div class="sc-bZQynM sc-kgoBCf col-md-12  sc-kTUwUJ gVGgUq">
+                     <div class="sc-bZQynM img-fluid  sc-kgoBCf gysmcD"><img data-src="https://rck.imgix.net/Lk94u0QflUqnRK8uHvh0kw/images/m36bUebxnEu4V0YRRoKfA.png" data-widthmap="{&quot;natural&quot;:&quot;642&quot;,&quot;style&quot;:&quot;621&quot;,&quot;tablet&quot;:&quot;484&quot;,&quot;mobile&quot;:&quot;353&quot;}" class="sc-gZMcBi sc-kpOJdX rUVsy" /></div>
+                     <div class="sc-dNLxif dvPXUV">
+                        <div class="sc-bZQynM sc-kgoBCf fEvFVT">
+                           <p><br></p>
+                        </div>
+                     </div>
+                     <div class="sc-dNLxif dvPXUV">
+                        <div class="sc-bZQynM sc-kgoBCf cyZhnU">
+                           <p>- Panorama (Antigo e Novo Testamento)</p>
+                           <p>- Aprenda a Bíblia de A a Z</p>
+                           <p>- 125 páginas de estudo bíblico</p>
+                           <p>- Simples e didático</p>
+                           <p><br></p>
+                           <p>COLOQUE SEU DEVOCIONAL EM DIA!!!</p>
+                           <p>- É só baixar, imprimir e começar a estudar</p>
+                        </div>
+                     </div>
+                     <div class="sc-dNLxif dvPXUV">
+                        <div class="sc-bZQynM sc-kgoBCf QYoUZ">
+                           <p>R$ 59,90 a vista</p>
+                        </div>
+                     </div>
+                     <div class="sc-bZQynM sc-kgoBCf sc-iAyFgw iGAVWy"><button type="button" id="bt1" class="sc-iwsKbI btn  sc-kGXeez fKukId">SIM, QUERO CONHECER AGORA!</button></div>
+                     <div class="sc-dNLxif dvPXUV">
+                        <div class="sc-bZQynM sc-kgoBCf jBMpAC">
+                           <p>Esse material é digital! Você não receberá uma apostila fisicamente na sua casa</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="a5130fe4-6b51-4bc2-80e0-3fcad4799539" class="sc-bZQynM sc-kgoBCf container  sc-gxMtzJ dYZNJa">
+            <div class="sc-bZQynM sc-kgoBCf row  sc-dqBHgY fhrpOY">
+               <div class="sc-bZQynM sc-kgoBCf col-md-12  sc-kTUwUJ fdcoUl">
+                  <div class="sc-bZQynM sc-kgoBCf bWMmli">
+                     <ul class="col-md-12 sc-jzJRlG hgAepW">
+                        <li class="sc-cSHVUG eZeEua">
+                           <div class="sc-bZQynM img-fluid  sc-kgoBCf dNLkZV"><img data-src="https://rck.imgix.net/Lk94u0QflUqnRK8uHvh0kw/images/KLcaBL8YEqFgP8gNh9uzQ.png" data-widthmap="{&quot;natural&quot;:&quot;1181&quot;,&quot;style&quot;:&quot;283&quot;,&quot;tablet&quot;:null,&quot;mobile&quot;:null}" class="sc-gZMcBi sc-kpOJdX kfnOCG" /></div>
+                        </li>
+                        <li class="sc-cSHVUG eZeEua">
+                           <div class="sc-dNLxif dvPXUV">
+                              <div class="sc-bZQynM sc-kgoBCf gmYMYY">Você não tem nada a perder!</div>
+                           </div>
+                           <div class="sc-dNLxif dvPXUV">
+                              <div class="sc-bZQynM sc-kgoBCf bPhCmB">Tenho tanta certeza que você vai adorar o Panorama Bíblico que estou te oferecendo uma garantia de 100% de devolução do dinheiro. Se você não estiver totalmente satisfeito com o material, basta me avisar em até 7 dias a partir da data da compra e devolverei seu dinheiro na íntegra, sem perguntas!</div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="d01ae0bc-c848-4337-a169-b1e636eadc13" class="sc-bZQynM sc-kgoBCf container-fluid  sc-gxMtzJ bYobXk">
+            <div style="padding: 0px;" class="container"></div>
+         </div>
+         <div id="fc5c1fa6-8e22-4a0f-bae3-a24d025511e9" class="sc-bZQynM sc-kgoBCf container-fluid  sc-gxMtzJ ffPfKa">
+            <div class="sc-bZQynM sc-kgoBCf row  sc-dqBHgY hOWTbv">
+               <div class="sc-bZQynM sc-kgoBCf col-md-12  sc-kTUwUJ bFyaVL">
+                  <div class="sc-dNLxif dvPXUV">
+                     <div class="sc-bZQynM sc-kgoBCf dgIdeD">
+                        <div>Você ainda tem dúvidas?</div>
+                     </div>
+                  </div>
+                  <div class="sc-bZQynM sc-kgoBCf bWMmli">
+                     <ul class="col-md-12 sc-jzJRlG giXHrf">
+                        <li class="sc-cSHVUG gCCyue">
+                           <div class="sc-bZQynM img-fluid  sc-kgoBCf eqfDiq"><img data-src="https://rck.imgix.net/Lk94u0QflUqnRK8uHvh0kw/images/fipwVvCtE66t25CjYPPw.png" data-widthmap="{&quot;natural&quot;:&quot;200&quot;,&quot;style&quot;:&quot;200&quot;,&quot;tablet&quot;:null,&quot;mobile&quot;:null}" class="sc-gZMcBi sc-kpOJdX dHVSdO" /></div>
+                           <div class="sc-dNLxif dvPXUV">
+                              <div class="sc-bZQynM sc-kgoBCf EUDkv"></div>
+                           </div>
+                           <div class="sc-dNLxif dvPXUV">
+                              <div class="sc-bZQynM sc-kgoBCf jAedyw">
+                                 Chame no whatsapp que a minha&nbsp;
+                                 <div>equipe de suporte vai te ajudar</div>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="686d1354-a95b-4a62-b230-aab1dfefa6f5" class="sc-bZQynM sc-kgoBCf container-fluid  sc-gxMtzJ ciVdqw">
+            <div style="padding: 0px;" class="container"></div>
+         </div>
+      </div>
+      <script type="text/javascript" async>window.initialReduxState = {"source":{"board":[{"$$typeof":"react.element","type":"div","key":"9bc1e995-a398-4cba-a8a3-17a697685936","ref":null,"props":{"rck_id":"9bc1e995-a398-4cba-a8a3-17a697685936","className":"container-fluid","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px","backgroundColor":"#202020"},"children":[],"contentboxed":"true","tablet":{"background":"url(https:\u002F\u002Frck.imgix.net\u002FLk94u0QflUqnRK8uHvh0kw\u002Fimages\u002F2TZrHXyUSz89aAqXBJMg.png) center center \u002F auto repeat scroll rgba(32, 32, 32, 1)"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"8d601a63-c332-4882-84e1-2a7f4cbbfb69","ref":null,"props":{"rck_id":"8d601a63-c332-4882-84e1-2a7f4cbbfb69","className":"container-fluid","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px","background":"url(https:\u002F\u002Frck.imgix.net\u002FLk94u0QflUqnRK8uHvh0kw\u002Fimages\u002F2TZrHXyUSz89aAqXBJMg.png) top center \u002F cover no-repeat scroll rgba(218, 210, 210, 0)"},"children":[{"$$typeof":"react.element","type":"div","key":"aaa2c316-434a-46c1-86a7-20faf2502343","ref":null,"props":{"rck_id":"aaa2c316-434a-46c1-86a7-20faf2502343","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0,"paddingBottom":"65px"},"children":[{"$$typeof":"react.element","type":"div","key":"3bb9ef88-53e4-4958-aa26-33f42711f54e","ref":null,"props":{"rck_id":"3bb9ef88-53e4-4958-aa26-33f42711f54e","className":"col-md-6","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"img","key":"b4593fae-da13-4d8f-985d-f0189810eb30","ref":null,"props":{"className":"img-fluid","rck_id":"b4593fae-da13-4d8f-985d-f0189810eb30","rck_type":"element","rck_element":"img","src":"https:\u002F\u002Frck.imgix.net\u002FLk94u0QflUqnRK8uHvh0kw\u002Fimages\u002F2EPSa0bW4k2ZVafzynPksg.png","style":{"width":"200px","height":"200px","textAlign":"left","marginTop":"-54px","marginRight":0,"marginBottom":0,"marginLeft":0},"naturalWidth":"500px","tablet":{"width":"150px","height":"150px","textAlign":"left","marginTop":"-54px","marginRight":0,"marginBottom":0,"marginLeft":0},"mobile":{"width":"185px","height":"185px","textAlign":"center","marginTop":"-53px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"f57b61ad-caab-4b03-b635-4838e7c3efb7","ref":null,"props":{"rck_id":"f57b61ad-caab-4b03-b635-4838e7c3efb7","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cp\u003EDe Gênesis a Apocalipse, uma explicação simples e didática de todos os livros da Bíblia\n&nbsp;\u003C\u002Fp\u003E","style":{"fontSize":"46px","fontWeight":"700","textAlign":"left","color":"#ffffff","fontFamily":"Montserrat","paddingRight":"45px","lineHeight":"57px","marginTop":"-48px","marginRight":0,"marginBottom":0,"marginLeft":0,"paddingTop":"5px","paddingBottom":"20px","paddingLeft":"5px"},"tablet":{"textAlign":"left","paddingRight":"0px","fontSize":"21px","lineHeight":"25px","marginTop":"-39px","marginRight":0,"marginBottom":0,"marginLeft":0},"mobile":{"textAlign":"center","fontSize":"21px","lineHeight":"26px","paddingTop":"32px","paddingRight":"3px","paddingBottom":"22px","paddingLeft":"1px","marginTop":"-69px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"27c78f17-01ea-48ca-9215-f586789bd9dc","ref":null,"props":{"className":"lead","rck_id":"27c78f17-01ea-48ca-9215-f586789bd9dc","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cp\u003E\u003Cb\u003EChega de ler a Bíblia&nbsp;\u003C\u002Fb\u003E\u003C\u002Fp\u003E\u003Cp\u003E\u003Cb\u003Ee não entender nada!\u003C\u002Fb\u003E\u003C\u002Fp\u003E","style":{"fontSize":"28px","color":"rgba(254, 215, 102, 1)","textAlign":"left","fontFamily":"Montserrat","fontWeight":"300","lineHeight":"31px","paddingRight":"50px","marginTop":"-5px","marginRight":0,"marginBottom":0,"marginLeft":0},"tablet":{"textAlign":"left","fontSize":"25px","lineHeight":"27px","paddingRight":"0px","marginTop":"-6px","marginRight":0,"marginBottom":0,"marginLeft":0},"mobile":{"textAlign":"center","fontSize":"26px","lineHeight":"27px","paddingTop":"5px","paddingRight":"0px","paddingBottom":"20px","paddingLeft":"0px","marginTop":"-12px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"8a0e0557-d6ad-405d-adda-2981cf4787c0","ref":null,"props":{"className":"lead","rck_id":"8a0e0557-d6ad-405d-adda-2981cf4787c0","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cp\u003E\u003Cfont color=\"#ffffff\"\u003EEstudar a&nbsp; Bíblia é uma tarefa que pode parecer difícil: o livro é enorme e não está em ordem cronológica. O Panorama Bíblico veio para ser um facilitador e te ajudar a de uma vez por todas a entender a Bíblia.&nbsp;\u003C\u002Ffont\u003E\u003C\u002Fp\u003E","style":{"fontSize":"20px","color":"#90ee2c","textAlign":"left","fontFamily":"Montserrat","fontWeight":"300","lineHeight":"24px","paddingRight":"50px","marginTop":"21px","marginRight":0,"marginBottom":0,"marginLeft":0},"tablet":{"textAlign":"left","fontSize":"15px","lineHeight":"18px","paddingRight":"0px"},"mobile":{"textAlign":"center","fontSize":"15px","lineHeight":"18px","paddingTop":"5px","paddingRight":"5px","paddingBottom":"24px","paddingLeft":"5px","marginTop":"-1px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"6a2291e6-9b30-47e5-ac6d-150f582c5593","ref":null,"props":{"className":"lead","rck_id":"6a2291e6-9b30-47e5-ac6d-150f582c5593","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cp\u003E\u003Cb\u003EVocê nunca mais vai poder&nbsp;\u003C\u002Fb\u003E\u003C\u002Fp\u003E\u003Cp\u003E\u003Cb\u003Edizer que não entende a Bíblia!\u003C\u002Fb\u003E\u003C\u002Fp\u003E","style":{"fontSize":"23px","color":"rgba(254, 215, 102, 1)","textAlign":"left","fontFamily":"Montserrat","fontWeight":"300","lineHeight":"24px","paddingRight":"50px","marginTop":"12px","marginRight":0,"marginBottom":0,"marginLeft":0},"tablet":{"textAlign":"left","fontSize":"18px","lineHeight":"22px","paddingRight":"0px","marginTop":"9px","marginRight":0,"marginBottom":0,"marginLeft":0},"mobile":{"textAlign":"center","fontSize":"18px","lineHeight":"20px","paddingTop":"5px","paddingRight":"5px","paddingBottom":"5px","paddingLeft":"5px","marginTop":"-4px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null}]},"_owner":null},{"$$typeof":"react.element","type":"div","key":"da62762a-fdf8-404b-a737-2258d1ffe31a","ref":null,"props":{"rck_id":"da62762a-fdf8-404b-a737-2258d1ffe31a","className":"col-md-6","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"img","key":"0de28c11-9907-4d7b-b199-4756468bed07","ref":null,"props":{"className":"img-fluid","rck_id":"0de28c11-9907-4d7b-b199-4756468bed07","rck_type":"element","rck_element":"img","src":"https:\u002F\u002Frck.imgix.net\u002FLk94u0QflUqnRK8uHvh0kw\u002Fimages\u002FA3OSS6ZW0yBTAOKKoPbA.png","tablet":{"width":"1080px","height":"1080px","marginTop":"-13px","marginRight":0,"marginBottom":0,"marginLeft":0},"naturalWidth":"1080px","hideInTablet":true,"hideInMobile":true,"style":{"width":"551px","height":"551px","marginTop":"-13px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null},{"$$typeof":"react.element","type":"img","key":"1842b6bc-9b5f-4a96-ae27-eb865b2f62ad","ref":null,"props":{"className":"img-fluid","rck_id":"1842b6bc-9b5f-4a96-ae27-eb865b2f62ad","rck_type":"element","rck_element":"img","src":"https:\u002F\u002Frck.imgix.net\u002FLk94u0QflUqnRK8uHvh0kw\u002Fimages\u002FA3OSS6ZW0yBTAOKKoPbA.png","tablet":{"width":"367px","height":"367px","marginTop":"-42px","marginRight":0,"marginBottom":0,"marginLeft":0},"naturalWidth":"1080px","style":{"width":"1080px","height":"1080px"},"hideInDesktop":true,"mobile":{"width":"324px","height":"324px","marginTop":"-52px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null}]},"_owner":null}],"mobile":{"paddingBottom":"30px"}},"_owner":null}],"contentboxed":"true","tablet":{"background":"url(https:\u002F\u002Frck.imgix.net\u002FLk94u0QflUqnRK8uHvh0kw\u002Fimages\u002F2TZrHXyUSz89aAqXBJMg.png) top center \u002F auto no-repeat scroll rgba(218, 210, 210, 0)"},"mobile":{"background":"url(https:\u002F\u002Frck.imgix.net\u002FLk94u0QflUqnRK8uHvh0kw\u002Fimages\u002F2TZrHXyUSz89aAqXBJMg.png) top center \u002F auto no-repeat scroll rgba(218, 210, 210, 0)"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"4cab85d8-ff30-48b8-9175-8840d506eb66","ref":null,"props":{"rck_id":"4cab85d8-ff30-48b8-9175-8840d506eb66","className":"container-fluid","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px","background":"url(https:\u002F\u002Frck.imgix.net\u002FqWDdPHrEUeLkK8Np6REw\u002Fimages\u002FG2mFujfXzUmLj7R9MDS8vQ)","backgroundSize":"auto","backgroundPosition":"bottom left","backgroundRepeat":"no-repeat","paddingBottom":"0px"},"children":[{"$$typeof":"react.element","type":"div","key":"cc307ccc-72f5-4804-817a-9c49fa2d8182","ref":null,"props":{"rck_id":"cc307ccc-72f5-4804-817a-9c49fa2d8182","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0,"paddingBottom":"0px"},"children":[{"$$typeof":"react.element","type":"div","key":"d2a7dde6-355d-47a5-86d9-4a0aeb21ff52","ref":null,"props":{"rck_id":"d2a7dde6-355d-47a5-86d9-4a0aeb21ff52","className":"col-md-12","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0,"paddingBottom":"0px"},"children":[{"$$typeof":"react.element","type":"img","key":"a5ef60da-b1be-4502-bf92-af72aae80f29","ref":null,"props":{"className":"img-fluid","rck_id":"a5ef60da-b1be-4502-bf92-af72aae80f29","rck_type":"element","rck_element":"img","src":"https:\u002F\u002Frck.imgix.net\u002FqWDdPHrEUeLkK8Np6REw\u002Fimages\u002FwakrSPmVyECc2bFthleTbA","style":{"marginTop":"0px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"cc3fec2d-affb-4af1-b230-9dbfd4f57fa8","ref":null,"props":{"className":"lead","rck_id":"cc3fec2d-affb-4af1-b230-9dbfd4f57fa8","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cp\u003ESão 125 páginas de estudo biblico\u003C\u002Fp\u003E\u003Cp\u003EContendo o Antigo e Novo Testamento\u003C\u002Fp\u003E","style":{"fontSize":"48px","color":"#666666","fontFamily":"Montserrat","fontWeight":"300","lineHeight":"55px","marginTop":"4px","paddingTop":"5px","paddingRight":"5px","paddingBottom":"25px","paddingLeft":"5px"},"tablet":{"fontSize":"32px","lineHeight":"39px"},"mobile":{"fontSize":"17px","marginTop":"4px","lineHeight":"18px"}},"_owner":null}]},"_owner":null}]},"_owner":null},{"$$typeof":"react.element","type":"div","key":"aed99b11-d55b-42b2-97fb-20cccdebc87b","ref":null,"props":{"rck_id":"aed99b11-d55b-42b2-97fb-20cccdebc87b","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0,"paddingBottom":"0px"},"children":[{"$$typeof":"react.element","type":"div","key":"7c5f38dc-2015-4490-9da2-4f00ac11d63a","ref":null,"props":{"rck_id":"7c5f38dc-2015-4490-9da2-4f00ac11d63a","className":"col-md-6","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0,"paddingBottom":"0px"},"children":[{"$$typeof":"react.element","type":"img","key":"a905f6b4-087b-42bd-a073-43624a391930","ref":null,"props":{"className":"img-fluid","rck_id":"a905f6b4-087b-42bd-a073-43624a391930","rck_type":"element","rck_element":"img","src":"https:\u002F\u002Frck.imgix.net\u002FLk94u0QflUqnRK8uHvh0kw\u002Fimages\u002Fm4KcesIqECDXL61YL88g.png","style":{"textAlign":"center","width":"431px","height":"430px"},"tablet":{"width":"353px","height":"353px","textAlign":"left"},"mobile":{"width":"353px","height":"353px","marginTop":"-2px","marginRight":0,"marginBottom":0,"marginLeft":0},"naturalWidth":"431px"},"_owner":null}]},"_owner":null},{"$$typeof":"react.element","type":"div","key":"a1a3099f-f380-476c-a4c7-527f8ed6ef3f","ref":null,"props":{"rck_id":"a1a3099f-f380-476c-a4c7-527f8ed6ef3f","className":"col-md-6","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"div","key":"589b0821-307e-439a-848f-755929e2cb1d","ref":null,"props":{"rck_id":"589b0821-307e-439a-848f-755929e2cb1d","rck_type":"element","rck_element":"bullet","src":"https:\u002F\u002Frck.imgix.net\u002FqWDdPHrEUeLkK8Np6REw\u002Fimages\u002FACp6437gTUtt4ujmkNcQ","text":"\u003Cb\u003ESe você é aquela pessoa que promete que vai ler a Bíblia até o final do ano, mas logo desiste, pois não consegue entender. Esse estudo é para você!\u003C\u002Fb\u003E\u003Cdiv\u003E\u003Cb\u003E\u003Cbr\u003E\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cb\u003E- O que é a Bíblia\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cb\u003E- Como a Bíblia está dividida\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cb\u003E- Como a Bíblia foi escrita\u003Cbr\u003E- Por onde começar a estudar a Bíblia\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cb\u003E- Qual a sequencia de livros ler\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cb\u003E- Qual a ordem cronológica da Bíblia\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cb\u003E- Quem é o autor de cada livro\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cb\u003E- As principais histórias\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cb\u003E- Os principais personagens\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cb\u003E- Resumo de todos os livros da Bíblia\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cbr\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cb\u003ETudo com muita imagem para tornar o estudo muito prático e didático.\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cb\u003E\u003Cbr\u003E\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E","children":[{"$$typeof":"react.element","type":"div","key":"43729303-95cb-4626-9b3d-bc5ba0d0ff53","ref":null,"props":{"className":"img-fluid","rck_id":"43729303-95cb-4626-9b3d-bc5ba0d0ff53","rck_type":"element","rck_element":"img"},"_owner":null},{"$$typeof":"react.element","type":"function(){var e=H()();return c.a.createElement(\"div\",{key:e,className:\"lead\",rck_id:e,rck_type:\"element\",rck_element:\"paragraph\",tag:\"div\",text:\"Here is a paragraph with some long text. You can edit this text with any text of your choice!\",style:{fontSize:14}})}","key":"e8db8379-ff91-4479-9f01-c9d9d1875d8e","ref":null,"props":{"rck_id":"e8db8379-ff91-4479-9f01-c9d9d1875d8e","rck_type":"element","rck_element":"headline","tag":"div","className":""},"_owner":null}],"style":{"lineHeight":"24px","color":"#555555","justifyContent":"flex-start","fontSize":"19px","imgposition":"20px","marginTop":"2px","marginRight":0,"marginBottom":0,"marginLeft":0},"tablet":{"fontSize":"14px","marginTop":"20px","imgposition":"25px","lineHeight":"19px"},"mobile":{"marginTop":"5px","fontSize":"14px","imgposition":"30px","paddingTop":"5px","paddingRight":"10px","paddingBottom":"5px","paddingLeft":"0px","marginRight":0,"marginBottom":0,"marginLeft":0,"lineHeight":"20px"}},"_owner":null}],"mobile":{"paddingBottom":"130px"}},"_owner":null}]},"_owner":null}],"contentboxed":"true","tablet":{"background":"url(https:\u002F\u002Frck.imgix.net\u002FqWDdPHrEUeLkK8Np6REw\u002Fimages\u002FG2mFujfXzUmLj7R9MDS8vQ)","backgroundSize":"contain","backgroundRepeat":"no-repeat","backgroundPosition":"bottom left"},"mobile":{"background":"url(https:\u002F\u002Frck.imgix.net\u002FqWDdPHrEUeLkK8Np6REw\u002Fimages\u002FG2mFujfXzUmLj7R9MDS8vQ)","backgroundSize":"contain","backgroundRepeat":"no-repeat","backgroundPosition":"bottom left"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"73b8b8c7-332e-455e-876a-b9a4a18c45de","ref":null,"props":{"rck_id":"73b8b8c7-332e-455e-876a-b9a4a18c45de","className":"container-fluid","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px","background":"url(https:\u002F\u002Frck.imgix.net\u002FLk94u0QflUqnRK8uHvh0kw\u002Fimages\u002F2TZrHXyUSz89aAqXBJMg.png) top center \u002F cover no-repeat scroll rgba(218, 210, 210, 0)","paddingTop":"5px","paddingRight":"5px","paddingBottom":"0px","paddingLeft":"5px"},"children":[{"$$typeof":"react.element","type":"div","key":"00b89f59-0719-4096-8079-0dcc27686790","ref":null,"props":{"rck_id":"00b89f59-0719-4096-8079-0dcc27686790","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0,"marginTop":"34px","paddingBottom":"27px","marginRight":0,"marginBottom":0,"marginLeft":0,"paddingTop":"5px","paddingRight":"5px","paddingLeft":"5px"},"children":[{"$$typeof":"react.element","type":"div","key":"48e9fca0-17a1-45b4-89d7-f734ff3d8f78","ref":null,"props":{"rck_id":"48e9fca0-17a1-45b4-89d7-f734ff3d8f78","className":"col-md-7","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"div","key":"c9439524-50a2-44fd-863a-87d1743f435a","ref":null,"props":{"className":"embed-responsive embed-responsive-16by9","rck_id":"c9439524-50a2-44fd-863a-87d1743f435a","rck_type":"element","rck_element":"video","style":{"display":"flex","marginTop":"-17px","marginRight":0,"marginBottom":0,"marginLeft":0},"src":"https:\u002F\u002Fwww.youtube.com\u002Fembed\u002F5XvmtnjoB4I","tablet":{"marginTop":"60px","width":"100%"},"mobile":{"width":"100%"}},"_owner":null}]},"_owner":null},{"$$typeof":"react.element","type":"div","key":"a7e31df9-89c6-4349-a189-47cc3ba15baf","ref":null,"props":{"rck_id":"a7e31df9-89c6-4349-a189-47cc3ba15baf","className":"col-md-5","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0,"paddingLeft":"55px"},"children":[{"$$typeof":"react.element","type":"div","key":"4d21e5f9-4fc7-456e-b2de-c08197d5115f","ref":null,"props":{"className":"lead","rck_id":"4d21e5f9-4fc7-456e-b2de-c08197d5115f","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cp\u003EDescomplicando a Bíblia\u003C\u002Fp\u003E","style":{"fontSize":"20px","color":"#90ee2c","textAlign":"left","fontFamily":"Montserrat","fontWeight":"300","lineHeight":"24px","marginTop":"10px","paddingRight":"40px"},"tablet":{"paddingRight":"0px","textAlign":"left","fontSize":"18px","lineHeight":"20px","marginTop":"21px","marginRight":0,"marginBottom":0,"marginLeft":0},"mobile":{"textAlign":"center","paddingRight":"0px","fontSize":"18px","lineHeight":"22px","marginTop":"5px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"283ff340-6530-4e4b-be32-23ce2c947b10","ref":null,"props":{"rck_id":"283ff340-6530-4e4b-be32-23ce2c947b10","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cp\u003EO que é o Panorama Bíblico?\u003C\u002Fp\u003E","style":{"fontSize":"46px","fontWeight":"700","color":"#ffffff","textAlign":"left","fontFamily":"Montserrat","lineHeight":"50px","marginTop":"10px"},"tablet":{"textAlign":"left","fontSize":"38px","lineHeight":"38px","marginTop":"10px"},"mobile":{"fontSize":"38px","lineHeight":"38px","textAlign":"center","marginTop":"15px"}},"_owner":null}],"tablet":{"paddingLeft":"10px"},"mobile":{"paddingLeft":"5px","background":"url(https:\u002F\u002Frck.imgix.net\u002FLk94u0QflUqnRK8uHvh0kw\u002Fimages\u002F2TZrHXyUSz89aAqXBJMg.png) center center \u002F auto repeat scroll rgba(218, 210, 210, 0)"}},"_owner":null}],"tablet":{"marginTop":"30px","paddingBottom":"30px"},"mobile":{"marginTop":"40px","paddingBottom":"40px"}},"_owner":null}],"contentboxed":"true","mobile":{"background":"url(https:\u002F\u002Frck.imgix.net\u002FqWDdPHrEUeLkK8Np6REw\u002Fimages\u002Fzbe85artKUyYSOvnTD1N5A)","backgroundSize":"auto","backgroundRepeat":"no-repeat","backgroundPosition":"top center","marginTop":"-100px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"7c5b6ec4-8d16-4d06-8bd0-9728159faa23","ref":null,"props":{"rck_id":"7c5b6ec4-8d16-4d06-8bd0-9728159faa23","className":"container-fluid","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px"},"children":[{"$$typeof":"react.element","type":"div","key":"55231871-9d5a-4477-8adf-c4b994e8c280","ref":null,"props":{"rck_id":"55231871-9d5a-4477-8adf-c4b994e8c280","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"div","key":"ec2e83fc-d79c-40d1-b578-354f1f29088a","ref":null,"props":{"rck_id":"ec2e83fc-d79c-40d1-b578-354f1f29088a","className":"col-md-12","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0,"paddingLeft":"25px","paddingRight":"25px","paddingBottom":"125px","background":"url() center center \u002F auto repeat scroll rgba(218, 210, 210, 0)"},"children":[{"$$typeof":"react.element","type":"div","key":"b6765db8-82d5-4e7f-a66e-b3f40585cc8f","ref":null,"props":{"rck_id":"b6765db8-82d5-4e7f-a66e-b3f40585cc8f","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cp\u003EAPROVEITE OS COMBOS!\u003C\u002Fp\u003E\u003Cp\u003EESTUDE MAIS PAGANDO MENOS\u003C\u002Fp\u003E","style":{"fontSize":"46px","fontWeight":"700","color":"#333333","fontFamily":"Montserrat","lineHeight":"57px","marginTop":"40px"},"tablet":{"fontSize":"35px","marginTop":"30px","lineHeight":"37px"},"mobile":{"fontSize":"19px","lineHeight":"24px","marginTop":"27px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null},{"$$typeof":"react.element","type":"ul","key":"bf8670df-b813-42a5-a3e2-46b3f1b28c60","ref":null,"props":{"rck_id":"bf8670df-b813-42a5-a3e2-46b3f1b28c60","rck_type":"element","rck_element":"card","children":[{"$$typeof":"react.element","type":"li","key":"7f80f58b-4a77-49c5-a8c6-87c4758a7d40","ref":null,"props":{"rck_id":"7f80f58b-4a77-49c5-a8c6-87c4758a7d40","rck_type":"element","children":[{"$$typeof":"react.element","type":"div","key":"cf4e3ead-d040-4187-8c86-d43025b05ed5","ref":null,"props":{"rck_id":"cf4e3ead-d040-4187-8c86-d43025b05ed5","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cdiv\u003ECOMBO 4\u003C\u002Fdiv\u003E","style":{"fontSize":26,"fontWeight":600,"color":"#212529"},"mobile":{"marginTop":"83px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null},{"$$typeof":"react.element","type":"img","key":"52ec0cbd-d230-4f28-8305-1aa97c238937","ref":null,"props":{"className":"img-fluid","rck_id":"52ec0cbd-d230-4f28-8305-1aa97c238937","rck_type":"element","rck_element":"img","src":"https:\u002F\u002Frck.imgix.net\u002FLk94u0QflUqnRK8uHvh0kw\u002Fimages\u002Fmed0HYEMUUybJjsimqJjg.png","style":{"width":"551px","height":"551px","marginTop":"-38px","marginRight":0,"marginBottom":0,"marginLeft":0},"naturalWidth":"1080px","tablet":{"width":"400px","height":"400px"},"mobile":{"width":"421px","height":"421px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"f7e3513d-5237-4beb-a2a3-c6acc3c2f71d","ref":null,"props":{"className":"lead","rck_id":"f7e3513d-5237-4beb-a2a3-c6acc3c2f71d","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"- Panorama Bíblico \u003Cbr\u003E\u003Cdiv\u003E&nbsp;- A história de 200 personagens bíblicos&nbsp;\u003C\u002Fdiv\u003E\u003Cdiv\u003E- O poder do sangue de Jesus&nbsp;\u003C\u002Fdiv\u003E\u003Cdiv\u003E- Os 3 anos do ministerio de Jesus&nbsp;\u003C\u002Fdiv\u003E","style":{"fontSize":"16px","color":"#212529","textAlign":"left","paddingTop":"5px","paddingRight":"5px","paddingBottom":"5px","paddingLeft":"69px","marginTop":"-21px","marginRight":0,"marginBottom":0,"marginLeft":0},"tablet":{"fontSize":"14px","textAlign":"left","paddingTop":"5px","paddingRight":"5px","paddingBottom":"5px","paddingLeft":"31px"},"mobile":{"textAlign":"left","paddingTop":"5px","paddingRight":"5px","paddingBottom":"5px","paddingLeft":"17px","fontSize":"15px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"bc3f6af2-3942-4eb3-beae-ac429073299d","ref":null,"props":{"rck_id":"bc3f6af2-3942-4eb3-beae-ac429073299d","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cp\u003E12x de R$11,97\u003C\u002Fp\u003E","style":{"fontSize":"37px","fontWeight":"700","lineHeight":"86px","marginTop":"-9px","color":"#333333","fontFamily":"Montserrat","marginRight":0,"marginBottom":0,"marginLeft":0},"tablet":{"fontSize":"23px","marginTop":"-21px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"1ade0371-ec44-4cdd-b2bf-ce05a1fe6024","ref":null,"props":{"rck_id":"1ade0371-ec44-4cdd-b2bf-ce05a1fe6024","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cp\u003Eou R$119,90 a vista\u003C\u002Fp\u003E","style":{"fontSize":"37px","fontWeight":"700","lineHeight":"86px","marginTop":"-9px","color":"#333333","fontFamily":"Montserrat","marginRight":0,"marginBottom":0,"marginLeft":0},"tablet":{"fontSize":"17px","marginTop":"-56px","marginRight":0,"marginBottom":0,"marginLeft":0},"mobile":{"fontSize":"23px","marginTop":"-43px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null},{"$$typeof":"react.element","type":"button","key":"c07869c6-b248-4642-bb7f-7e0d16fc27e4","ref":null,"props":{"rck_id":"c07869c6-b248-4642-bb7f-7e0d16fc27e4","className":"btn","style":{"backgroundColor":"#90ee2c","fontFamily":"Montserrat","fontWeight":"700","fontSize":"16px","color":"#333333","width":"87%","paddingTop":"17px","paddingBottom":"17px","borderRadius":"50px","marginTop":"35px"},"rck_type":"element","rck_element":"button","text":"COMPRAR COMBO 4","aria-label":"Button","tablet":{"marginTop":"-13px","width":"100%","marginRight":0,"marginBottom":0,"marginLeft":0},"mobile":{"width":"90%","marginTop":"-10px","marginRight":0,"marginBottom":0,"marginLeft":0},"type":"external","newWindow":false,"source":"https:\u002F\u002Fpay.hotmart.com\u002FU72437023H?off=nw7we47b&checkoutMode=10","redirectType":"noAction","callback":""},"_owner":null}]},"_owner":null},{"$$typeof":"react.element","type":"li","key":"950fbbd1-9975-4b82-a7ca-fa1ba80f8819","ref":null,"props":{"rck_id":"950fbbd1-9975-4b82-a7ca-fa1ba80f8819","rck_type":"element","children":[{"$$typeof":"react.element","type":"div","key":"8213a53a-0929-4cbc-bba6-66f34421c32b","ref":null,"props":{"rck_id":"8213a53a-0929-4cbc-bba6-66f34421c32b","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cdiv\u003ECOMBO 6 + BONUS\u003C\u002Fdiv\u003E","style":{"fontSize":26,"fontWeight":600,"textAlign":"center","color":"#212529"},"mobile":{"marginTop":"65px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null},{"$$typeof":"react.element","type":"img","key":"6083eaf3-859f-4eb9-bb7e-a10fa9912a46","ref":null,"props":{"className":"img-fluid","rck_id":"6083eaf3-859f-4eb9-bb7e-a10fa9912a46","rck_type":"element","rck_element":"img","src":"https:\u002F\u002Frck.imgix.net\u002FLk94u0QflUqnRK8uHvh0kw\u002Fimages\u002F4UjCh2rZBUa3ZF1zZnNO6w.png","style":{"width":"464px","height":"464px","marginTop":"-63px","marginRight":0,"marginBottom":0,"marginLeft":0,"objectFit":"contain"},"naturalWidth":"1080px","tablet":{"width":"356px","height":"356px"},"mobile":{"width":"367px","height":"367px","marginTop":"-44px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"435278e6-aada-4abd-a837-7d199bd5acbb","ref":null,"props":{"className":"lead","rck_id":"435278e6-aada-4abd-a837-7d199bd5acbb","rck_type":"element","rck_element":"paragraph","tag":"div","text":"- Panorama Bíblico&nbsp;\u003Cdiv\u003E- Panorama Bíblico Kids\u003C\u002Fdiv\u003E\u003Cdiv\u003E- A história de 200 personagens bíblicos\u003C\u002Fdiv\u003E\u003Cdiv\u003E- O poder do sangue de Jesus\u003C\u002Fdiv\u003E\u003Cdiv\u003E- Os 3 anos do ministerio de Jesus&nbsp;\u003Cbr\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E- Plano de leitura da bíblia em 365 dias\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cbr\u003E\u003C\u002Fdiv\u003E","style":{"fontSize":14,"textAlign":"left","color":"#212529","paddingTop":"0px","paddingRight":"5px","paddingBottom":"5px","paddingLeft":"100px","marginTop":"-53px","marginRight":0,"marginBottom":0,"marginLeft":0},"tablet":{"textAlign":"left","paddingTop":"5px","paddingRight":"5px","paddingBottom":"5px","paddingLeft":"38px"},"mobile":{"textAlign":"left","paddingTop":"5px","paddingRight":"5px","paddingBottom":"5px","paddingLeft":"33px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"e3571b64-33cf-4976-ae76-9a3a08ae2d1e","ref":null,"props":{"className":"lead","rck_id":"e3571b64-33cf-4976-ae76-9a3a08ae2d1e","rck_type":"element","rck_element":"paragraph","tag":"div","text":"\u003Cdiv\u003E\u003Cb\u003ELEVE DE BONUS&nbsp;\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E- \u003Cfont color=\"#0693e3\"\u003E250 quiz bíblico (Perguntas e respostas)&nbsp;\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#0693e3\"\u003E- Oração de Mãe&nbsp;\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#0693e3\"\u003E- 50 temas para culto infantil&nbsp;\u003C\u002Ffont\u003E\u003C\u002Fdiv\u003E\u003Cdiv\u003E\u003Cfont color=\"#0693e3\"\u003E- Desvendando o Apocalipse\u003C\u002Ffont\u003E\u003Cbr\u003E\u003C\u002Fdiv\u003E","style":{"fontSize":14,"textAlign":"left","color":"#212529","paddingTop":"0px","paddingRight":"5px","paddingBottom":"5px","paddingLeft":"100px","marginTop":"-13px","marginRight":0,"marginBottom":0,"marginLeft":0},"tablet":{"textAlign":"left","paddingTop":"5px","paddingRight":"5px","paddingBottom":"5px","paddingLeft":"38px"},"mobile":{"textAlign":"left","paddingTop":"5px","paddingRight":"5px","paddingBottom":"5px","paddingLeft":"33px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"264efa5f-01f4-40e7-aa9b-212b9ee4db35","ref":null,"props":{"rck_id":"264efa5f-01f4-40e7-aa9b-212b9ee4db35","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cp\u003E12x de R$14,96\u003C\u002Fp\u003E","style":{"fontSize":"37px","fontWeight":"700","lineHeight":"86px","marginTop":"-9px","color":"#333333","fontFamily":"Montserrat","marginRight":0,"marginBottom":0,"marginLeft":0},"tablet":{"fontSize":"23px","marginTop":"-21px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"3dc56055-11a6-424c-9fad-8d943432be15","ref":null,"props":{"rck_id":"3dc56055-11a6-424c-9fad-8d943432be15","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cp\u003Eou R$149,90 a vista\u003C\u002Fp\u003E","style":{"fontSize":"37px","fontWeight":"700","lineHeight":"86px","marginTop":"-9px","color":"#333333","fontFamily":"Montserrat","marginRight":0,"marginBottom":0,"marginLeft":0},"tablet":{"fontSize":"17px","marginTop":"-56px","marginRight":0,"marginBottom":0,"marginLeft":0},"mobile":{"fontSize":"23px","marginTop":"-43px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null},{"$$typeof":"react.element","type":"button","key":"53ff1eae-d405-492e-8e47-330870b8b6dc","ref":null,"props":{"rck_id":"53ff1eae-d405-492e-8e47-330870b8b6dc","className":"btn","style":{"backgroundColor":"#90ee2c","fontFamily":"Montserrat","fontWeight":"700","fontSize":"16px","color":"#333333","width":"87%","paddingTop":"17px","paddingBottom":"17px","borderRadius":"50px","marginTop":"35px"},"rck_type":"element","rck_element":"button","text":"COMPRAR COMBO 6 + BONUS","aria-label":"Button","tablet":{"marginTop":"-13px","width":"100%","marginRight":0,"marginBottom":0,"marginLeft":0},"mobile":{"width":"90%","marginTop":"-11px","marginRight":0,"marginBottom":0,"marginLeft":0},"type":"external","newWindow":false,"source":"https:\u002F\u002Fpay.hotmart.com\u002FU75559979E?off=7pu6e188&checkoutMode=10","redirectType":"noAction","callback":""},"_owner":null},{"$$typeof":"react.element","type":"div","key":"7ee9b134-1f21-40ca-b7dd-d532c837533e","ref":null,"props":{"rck_id":"7ee9b134-1f21-40ca-b7dd-d532c837533e","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cp\u003E\u003Cbr\u003E\u003C\u002Fp\u003E","style":{"fontSize":"37px","fontWeight":"700","lineHeight":"86px","marginTop":"-9px","color":"#333333","fontFamily":"Montserrat","marginRight":0,"marginBottom":0,"marginLeft":0},"tablet":{"fontSize":"23px","marginTop":"-21px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null}]},"_owner":null}],"separatorPosition":"-13px","mobile":{"marginTop":"-66px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null}],"tablet":{"paddingLeft":"10px","paddingRight":"10px","paddingBottom":"50px"},"mobile":{"paddingLeft":"5px","paddingRight":"5px","paddingBottom":"25px"}},"_owner":null}]},"_owner":null}],"contentboxed":"true"},"_owner":null},{"$$typeof":"react.element","type":"div","key":"56a59009-5d73-4527-9edf-e3f195f748be","ref":null,"props":{"rck_id":"56a59009-5d73-4527-9edf-e3f195f748be","className":"container-fluid","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px","background":"url(https:\u002F\u002Frck.imgix.net\u002FLk94u0QflUqnRK8uHvh0kw\u002Fimages\u002F2TZrHXyUSz89aAqXBJMg.png) bottom center \u002F cover no-repeat scroll rgba(218, 210, 210, 0)","marginTop":"-100px","marginRight":0,"marginBottom":0,"marginLeft":0,"paddingTop":"22px","paddingRight":"5px","paddingBottom":"5px","paddingLeft":"5px"},"children":[{"$$typeof":"react.element","type":"div","key":"f955a4a7-0fd8-45c5-a835-e210ce7adb77","ref":null,"props":{"rck_id":"f955a4a7-0fd8-45c5-a835-e210ce7adb77","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0,"paddingTop":"0px","paddingRight":"5px","paddingBottom":"5px","paddingLeft":"5px"},"children":[{"$$typeof":"react.element","type":"div","key":"62ee3269-b93d-4583-82a0-b8ad4c15cab9","ref":null,"props":{"rck_id":"62ee3269-b93d-4583-82a0-b8ad4c15cab9","className":"col-md-12","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0,"paddingBottom":"95px"},"children":[{"$$typeof":"react.element","type":"img","key":"e70815b7-4200-4d4c-afb3-7a52b38e5baf","ref":null,"props":{"className":"img-fluid","rck_id":"e70815b7-4200-4d4c-afb3-7a52b38e5baf","rck_type":"element","rck_element":"img","src":"https:\u002F\u002Frck.imgix.net\u002FLk94u0QflUqnRK8uHvh0kw\u002Fimages\u002Fm36bUebxnEu4V0YRRoKfA.png","style":{"marginTop":"-1px","width":"621px","height":"470px","marginRight":0,"marginBottom":0,"marginLeft":0},"tablet":{"marginTop":"-8px","width":"484px","height":"367px","objectFit":"fill","marginRight":0,"marginBottom":0,"marginLeft":0,"textAlign":"center"},"mobile":{"marginTop":"82px","width":"353px","height":"345px","marginRight":0,"marginBottom":0,"marginLeft":0},"naturalWidth":"642px"},"_owner":null},{"$$typeof":"react.element","type":"div","key":"d956ea4f-056b-449d-8353-0c2bb4a4a5ca","ref":null,"props":{"rck_id":"d956ea4f-056b-449d-8353-0c2bb4a4a5ca","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cp\u003E\u003Cbr\u003E\u003C\u002Fp\u003E","style":{"fontSize":"71px","fontWeight":"700","color":"#ffffff","fontFamily":"Montserrat","lineHeight":"57px","marginTop":"-100px","marginRight":0,"marginBottom":0,"marginLeft":0},"tablet":{"fontSize":"42px","marginTop":"-100px","marginRight":0,"marginBottom":0,"marginLeft":0},"mobile":{"fontSize":"33px","lineHeight":"42px","marginTop":"-45px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"5dfca80b-85bb-4311-9a8b-62dd7cea4803","ref":null,"props":{"className":"lead","rck_id":"5dfca80b-85bb-4311-9a8b-62dd7cea4803","rck_type":"element","rck_element":"sub-headline","tag":"div","text":"\u003Cp\u003E- Panorama (Antigo e Novo Testamento)\u003C\u002Fp\u003E\u003Cp\u003E- Aprenda a Bíblia de A a Z\u003C\u002Fp\u003E\u003Cp\u003E- 125 páginas de estudo bíblico\u003C\u002Fp\u003E\u003Cp\u003E- Simples e didático\u003C\u002Fp\u003E\u003Cp\u003E\u003Cbr\u003E\u003C\u002Fp\u003E\u003Cp\u003ECOLOQUE SEU DEVOCIONAL EM DIA!!!\u003C\u002Fp\u003E\u003Cp\u003E- É só baixar, imprimir e começar a estudar\u003C\u002Fp\u003E","style":{"fontSize":"29px","color":"#ffffff","fontFamily":"Montserrat","fontWeight":"300","lineHeight":"38px","marginTop":"-87px","textAlign":"center","paddingTop":"100px","paddingRight":"5px","paddingBottom":"5px","paddingLeft":"0px","marginRight":0,"marginBottom":0,"marginLeft":0},"tablet":{"fontSize":"18px","lineHeight":"22px","marginTop":"-73px","marginRight":0,"marginBottom":0,"marginLeft":0},"mobile":{"fontSize":"15px","lineHeight":"20px","textAlign":"left","paddingTop":"5px","paddingRight":"5px","paddingBottom":"0px","paddingLeft":"15px","marginTop":"2px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"d01fe730-8d56-45cc-a59b-eb2303ad4308","ref":null,"props":{"rck_id":"d01fe730-8d56-45cc-a59b-eb2303ad4308","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cp\u003ER$ 59,90 a vista\u003C\u002Fp\u003E","style":{"fontSize":"59px","fontWeight":"700","lineHeight":"86px","marginTop":"1px","color":"rgba(255, 255, 255, 1)","fontFamily":"Montserrat","marginRight":0,"marginBottom":0,"marginLeft":0},"tablet":{"fontSize":"41px","marginTop":"-32px","marginRight":0,"marginBottom":0,"marginLeft":0},"mobile":{"fontSize":"37px"}},"_owner":null},{"$$typeof":"react.element","type":"button","key":"69fd11fb-ba1b-4342-b968-06131757ad32","ref":null,"props":{"rck_id":"69fd11fb-ba1b-4342-b968-06131757ad32","className":"btn","style":{"backgroundColor":"#90ee2c","marginTop":"11px","borderRadius":"50px","fontFamily":"Montserrat","fontWeight":"700","color":"#333333","fontSize":"16px","paddingTop":"30px","paddingBottom":"27px","width":"42%","marginRight":0,"marginBottom":0,"marginLeft":0,"paddingRight":"5px","paddingLeft":"5px"},"rck_type":"element","rck_element":"button","text":"SIM, QUERO CONHECER AGORA!","aria-label":"Button","tablet":{"width":"60%","paddingTop":"21px","paddingBottom":"21px","marginTop":"-5px","marginRight":0,"marginBottom":0,"marginLeft":0},"mobile":{"width":"90%","paddingTop":"21px","paddingBottom":"21px","fontSize":"14px","marginTop":"-2px","marginRight":0,"marginBottom":0,"marginLeft":0},"type":"external","newWindow":false,"source":"https:\u002F\u002Fpay.hotmart.com\u002FB64042762X?off=w83xfbem&checkoutMode=10","redirectType":"noAction","callback":""},"_owner":null},{"$$typeof":"react.element","type":"div","key":"61a00aab-5c50-424e-9675-57cc734acf0a","ref":null,"props":{"rck_id":"61a00aab-5c50-424e-9675-57cc734acf0a","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cp\u003EEsse material é digital! Você não receberá uma apostila fisicamente na sua casa\u003C\u002Fp\u003E","style":{"fontSize":"23px","fontWeight":"700","lineHeight":"86px","marginTop":"14px","color":"rgba(255, 255, 255, 1)","fontFamily":"Montserrat","marginRight":0,"marginBottom":0,"marginLeft":0},"tablet":{"fontSize":"15px","marginTop":"4px","marginRight":0,"marginBottom":0,"marginLeft":0},"mobile":{"fontSize":"15px","marginTop":"20px","marginRight":0,"marginBottom":0,"marginLeft":0,"lineHeight":"21px"}},"_owner":null}],"tablet":{"paddingBottom":"55px"},"mobile":{"paddingBottom":"54px","paddingTop":"5px","paddingRight":"5px","paddingLeft":"5px"}},"_owner":null}],"mobile":{"marginTop":"-100px","marginRight":0,"marginBottom":0,"marginLeft":0,"paddingTop":"0px","paddingRight":"5px","paddingBottom":"5px","paddingLeft":"5px"}},"_owner":null}],"contentboxed":"true","tablet":{"background":"url(https:\u002F\u002Frck.imgix.net\u002FLk94u0QflUqnRK8uHvh0kw\u002Fimages\u002FoWSw6AiJu0OlysEBNo0DCA.png) bottom center \u002F cover no-repeat scroll rgba(170, 0, 0, 1)"},"mobile":{"background":"url(https:\u002F\u002Frck.imgix.net\u002FqWDdPHrEUeLkK8Np6REw\u002Fimages\u002F8l8Q456fUGsmXat1BnZg)","backgroundSize":"cover","backgroundRepeat":"no-repeat","backgroundPosition":"bottom left","marginTop":"-100px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"a5130fe4-6b51-4bc2-80e0-3fcad4799539","ref":null,"props":{"rck_id":"a5130fe4-6b51-4bc2-80e0-3fcad4799539","className":"container","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px"},"children":[{"$$typeof":"react.element","type":"div","key":"f8216514-b508-4f46-a7a5-2d567753a40c","ref":null,"props":{"rck_id":"f8216514-b508-4f46-a7a5-2d567753a40c","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"div","key":"9b947eec-3f4d-4ccc-a699-2acd151613c4","ref":null,"props":{"rck_id":"9b947eec-3f4d-4ccc-a699-2acd151613c4","className":"col-md-12","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0},"children":[{"$$typeof":"react.element","type":"ul","key":"f3c5392a-28ee-4f1f-b010-741c3243cbc6","ref":null,"props":{"rck_id":"f3c5392a-28ee-4f1f-b010-741c3243cbc6","rck_type":"element","rck_element":"card","children":[{"$$typeof":"react.element","type":"li","key":"f5f98ea4-7c91-4aa3-a428-b046c9ec0f0e","ref":null,"props":{"rck_id":"f5f98ea4-7c91-4aa3-a428-b046c9ec0f0e","rck_type":"element","children":[{"$$typeof":"react.element","type":"img","key":"5253d21c-626b-4d65-b8ea-78385ad0af13","ref":null,"props":{"className":"img-fluid","rck_id":"5253d21c-626b-4d65-b8ea-78385ad0af13","rck_type":"element","rck_element":"img","src":"https:\u002F\u002Frck.imgix.net\u002FLk94u0QflUqnRK8uHvh0kw\u002Fimages\u002FKLcaBL8YEqFgP8gNh9uzQ.png","style":{"width":"283px","height":"283px"},"naturalWidth":"1181px"},"_owner":null}]},"_owner":null},{"$$typeof":"react.element","type":"li","key":"a5fb55e0-98ff-4aae-b5a7-71ed9d35cc2c","ref":null,"props":{"rck_id":"a5fb55e0-98ff-4aae-b5a7-71ed9d35cc2c","rck_type":"element","children":[{"$$typeof":"react.element","type":"div","key":"94a61472-00e7-4f9a-be1e-15689d736a86","ref":null,"props":{"rck_id":"94a61472-00e7-4f9a-be1e-15689d736a86","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"Você não tem nada a perder!","style":{"fontSize":26,"fontWeight":600,"textAlign":"center","color":"#212529"},"mobile":{"fontSize":"21px"},"tablet":{"fontSize":"21px"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"6a6d0798-bede-4ff1-9c8f-fd56a49d5837","ref":null,"props":{"className":"lead","rck_id":"6a6d0798-bede-4ff1-9c8f-fd56a49d5837","rck_type":"element","rck_element":"paragraph","tag":"div","text":"Tenho tanta certeza que você vai adorar o Panorama Bíblico que estou te oferecendo uma garantia de 100% de devolução do dinheiro. Se você não estiver totalmente satisfeito com o material, basta me avisar em até 7 dias a partir da data da compra e devolverei seu dinheiro na íntegra, sem perguntas!","style":{"fontSize":"21px","textAlign":"justify","color":"#212529","paddingTop":"5px","paddingRight":"5px","paddingBottom":"5px","paddingLeft":"0px"},"mobile":{"fontSize":"16px","textAlign":"justify"},"tablet":{"fontSize":"18px","textAlign":"justify"}},"_owner":null}]},"_owner":null}]},"_owner":null}]},"_owner":null}]},"_owner":null}]},"_owner":null},{"$$typeof":"react.element","type":"div","key":"d01ae0bc-c848-4337-a169-b1e636eadc13","ref":null,"props":{"rck_id":"d01ae0bc-c848-4337-a169-b1e636eadc13","className":"container-fluid","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px","marginTop":"-250px","paddingBottom":"155px"},"children":[],"contentboxed":"true"},"_owner":null},{"$$typeof":"react.element","type":"div","key":"fc5c1fa6-8e22-4a0f-bae3-a24d025511e9","ref":null,"props":{"rck_id":"fc5c1fa6-8e22-4a0f-bae3-a24d025511e9","className":"container-fluid","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px","paddingLeft":"0px","paddingBottom":"0px","backgroundColor":"#f6f6f6","paddingTop":"0px"},"children":[{"$$typeof":"react.element","type":"div","key":"a4444655-1b68-4128-a2f9-71eabb6803f1","ref":null,"props":{"rck_id":"a4444655-1b68-4128-a2f9-71eabb6803f1","className":"row","rck_type":"row","rck_highlightable":"1","style":{"padding":"5px","margin":0,"paddingLeft":"0px","paddingBottom":"0px","paddingTop":"0px"},"children":[{"$$typeof":"react.element","type":"div","key":"da259f37-7292-449f-beea-1fc6f3c9eb80","ref":null,"props":{"rck_id":"da259f37-7292-449f-beea-1fc6f3c9eb80","className":"col-md-12","rck_type":"column","rck_highlightable":"1","style":{"padding":"5px","margin":0,"paddingLeft":"65px","paddingRight":"5px","paddingBottom":"85px"},"children":[{"$$typeof":"react.element","type":"div","key":"b51f5473-bfac-4094-89b4-1443ead55cea","ref":null,"props":{"rck_id":"b51f5473-bfac-4094-89b4-1443ead55cea","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"\u003Cdiv\u003EVocê ainda tem dúvidas?\u003C\u002Fdiv\u003E","style":{"fontSize":26,"fontWeight":600,"color":"#212529","marginTop":"88px","marginRight":0,"marginBottom":0,"marginLeft":0},"mobile":{"fontSize":"21px"}},"_owner":null},{"$$typeof":"react.element","type":"ul","key":"eb505a2f-0034-4ce6-a000-55a1cce8c49a","ref":null,"props":{"rck_id":"eb505a2f-0034-4ce6-a000-55a1cce8c49a","rck_type":"element","rck_element":"card","children":[{"$$typeof":"react.element","type":"li","key":"7ffb7c16-4e9b-4db5-b832-99f40c28fab8","ref":null,"props":{"rck_id":"7ffb7c16-4e9b-4db5-b832-99f40c28fab8","rck_type":"element","children":[{"$$typeof":"react.element","type":"img","key":"89d4a1e3-2b1d-42ad-9c63-457f7cd992a3","ref":null,"props":{"className":"img-fluid","rck_id":"89d4a1e3-2b1d-42ad-9c63-457f7cd992a3","rck_type":"element","rck_element":"img","src":"https:\u002F\u002Frck.imgix.net\u002FLk94u0QflUqnRK8uHvh0kw\u002Fimages\u002FfipwVvCtE66t25CjYPPw.png","type":"external","newWindow":false,"source":"https:\u002F\u002Fapi.whatsapp.com\u002Fsend?phone=5548991363432","redirectType":"noAction","callback":"","style":{"width":"200px","height":"100px","marginTop":"19px","marginRight":0,"marginBottom":0,"marginLeft":0},"naturalWidth":"200px"},"_owner":null},{"$$typeof":"react.element","type":"div","key":"82e47ade-cb88-4979-8ff6-02754e1b1fa8","ref":null,"props":{"rck_id":"82e47ade-cb88-4979-8ff6-02754e1b1fa8","rck_type":"element","rck_element":"headline","tag":"div","className":"","text":"","style":{"fontSize":26,"fontWeight":600,"textAlign":"center","color":"#212529"}},"_owner":null},{"$$typeof":"react.element","type":"div","key":"ebc904bc-46be-4d0e-8e24-7f407bb08353","ref":null,"props":{"className":"lead","rck_id":"ebc904bc-46be-4d0e-8e24-7f407bb08353","rck_type":"element","rck_element":"paragraph","tag":"div","text":"Chame no whatsapp que a minha&nbsp;\u003Cdiv\u003Eequipe de suporte vai te ajudar\u003C\u002Fdiv\u003E","style":{"fontSize":"20px","textAlign":"center","color":"#212529","marginTop":"22px","marginRight":0,"marginBottom":0,"marginLeft":0},"mobile":{"fontSize":"16px"}},"_owner":null}]},"_owner":null}],"style":{"marginTop":"7px","marginRight":0,"marginBottom":0,"marginLeft":0}},"_owner":null}],"tablet":{"paddingLeft":"25px","paddingBottom":"50px"},"mobile":{"paddingLeft":"30px","paddingRight":"30px","paddingBottom":"40px"}},"_owner":null}]},"_owner":null}],"contentboxed":"false"},"_owner":null},{"$$typeof":"react.element","type":"div","key":"686d1354-a95b-4a62-b230-aab1dfefa6f5","ref":null,"props":{"rck_id":"686d1354-a95b-4a62-b230-aab1dfefa6f5","className":"container-fluid","rck_type":"container","rck_highlightable":"1","style":{"padding":"5px","backgroundColor":"#202020","background":"url(https:\u002F\u002Frck.imgix.net\u002FqWDdPHrEUeLkK8Np6REw\u002Fimages\u002FI7JMuP5wW0SO7vuiug7Vtw)","backgroundSize":"auto","backgroundPosition":"bottom center","backgroundRepeat":"repeat-x"},"children":[],"contentboxed":"true"},"_owner":null}],"pageSettings":{"language":"pt-BR","badgeAllowed":false,"position":"bottomLeft","launchContent":0,"pageFontFamily":"Montserrat","colorSwatch":["#20ff00","#fe4a49","#2ab7ca","#fed766","#f4f4f8","#4a4e4d","#3da4ab","#f6cd61","#fe8a71","#96ceb4","#ffeead","#ff6f69","#ffcc5c","#4b3832","#854442","#fff4e6"],"seo_title":"Panorama Bíblico","seo_keywords":"Panorama Bíblico Estudo Biblico","facebookPixel":"2676969632618564","facebookApi":false,"fonts":[{"style":"Montserrat"}]}},"notification":[],"tenant":{"pageId":"2c19nFOs1kSVR1nYfUa46g","tenantId":"Lk94u0QflUqnRK8uHvh0kw","funnelId":"71473cae-3efe-432e-b2fb-4f0090c72369","stepId":"ZrRGiquTlkCN8QztdJEsXA","type":"Página de Venda Curta","isSSR":true},"settings":{"url":"panoramabiblico.thiagojeremias.com.br\u002Fpb","version":"0","originStepUrl":"","originStepId":null,"isConversion":false},"router":{"location":{"pathname":"\u002F","search":"","hash":"","key":"dt7lf0"},"action":"POP"}}</script><script type="text/javascript" async>
+         var blob = new Blob([
+             document.querySelector('#result').textContent
+         ], { type: "text/javascript" });
+         
+         var worker = new Worker(window.URL.createObjectURL(blob));
+         
+         worker.onmessage = function (e) {
+             if (e.data.type === 'getFont') {
+                 getFont(e.data.link);
+             }
+             if (e.data.type === 'getMain') {
+                 getMain([
+                     '/dist/vendor_e06534953fb807bdf519.js',
+                     '/dist/main-client_c6a84cb40a6550006168.js'
+                 ]);
+             }
+         };
+         
+         worker.postMessage({ url: document.location.protocol + '//' + document.location.host });
+      </script><script type="text/javascript" async>
+         var devicePixelRatio = window.devicePixelRatio;
+         var deviceWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+         var deviceType;
+         if(deviceWidth >= 992) deviceType = 'style';
+         if(deviceWidth < 992 && deviceWidth >= 820) deviceType = 'tablet';
+         if(deviceWidth < 820) deviceType = 'mobile';
+         
+         var imgs = document.getElementsByTagName("img");
+         
+         for (var i = 0; i < imgs.length; i++) {
+             var img = imgs[i];
+             var src = img.dataset.src;
+             var widthMap = JSON.parse(img.dataset.widthmap);
+         
+             if(img.dataset.isgif) {
+                 img.src = src;
+                 continue;
+             } else {
+                 src = src + '?auto=compress&width=';
+             }
+         
+             if(widthMap[deviceType]) {
+                 var finalWidth;
+                 var logicalSize = widthMap[deviceType] * devicePixelRatio;
+                 if (widthMap.natural && logicalSize > widthMap.natural) {
+                     finalWidth = widthMap.natural;
+                 } else {
+                     finalWidth = logicalSize;
+                 }
+                 img.src = src + finalWidth;
+                 continue;
+             }
+         
+             if(widthMap.style) {
+                 var finalWidth;
+                 var logicalSize = widthMap.style * devicePixelRatio;
+                 if (widthMap.natural && logicalSize > widthMap.natural) {
+                     finalWidth = widthMap.natural;
+                 } else {
+                     finalWidth = logicalSize;
+                 }
+                 img.src = src + finalWidth;
+                 continue;
+             }
+             img.src = src;
+         }
+      </script>
+	  <script>
+	  // Obtém o botão pelo id
+const bt2 = document.getElementById('bt2');
+const bt1 = document.getElementById('bt1');
+const bt3 = document.getElementById('bt3');
+
+// Adiciona um evento de clique ao botão
+bt3.addEventListener('click', function() {
+  // Redireciona para o link desejado
+  window.location.href = 'https://pay.kiwify.com.br/xkBsI5V';
+});
+bt1.addEventListener('click', function() {
+  // Redireciona para o link desejado
+  window.location.href = 'https://pay.kiwify.com.br/T2d3Jtr';
+});
+bt2.addEventListener('click', function() {
+  // Redireciona para o link desejado
+  window.location.href = 'https://pay.kiwify.com.br/T2d3Jtr';
+});
+	</script>
+   </body>
+</html>
